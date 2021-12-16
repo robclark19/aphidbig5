@@ -1,0 +1,528 @@
+Run,ID #,count of plants,Plant,Genotype,Biotype,virus,Counts,absorbance,log Counts,sqrt_rel_increase,Infection status,relative increase,Retain?,Bean Aphids
+One,AB1,5,Alfalfa,1,pea,BLRV,113,1.173,4.736198448,3.209361307,YES,10.3,Keep,
+One,AB1,6,Alfalfa,1,pea,BLRV,134,0.918,4.905274778,3.521363372,YES,12.4,Keep,
+One,A1,2,Alfalfa,1,pea,Sham,106,0.433,4.672828834,3.098386677,NO,9.6,Keep,
+One,A1,3,Alfalfa,1,pea,Sham,40,0.588,3.713572067,1.732050808,NO,3,Keep,
+One,AB2,13,Alfalfa,2,pea,BLRV,3,0.761,1.386294361,,YES,-0.7,Keep,
+One,AB2,14,Alfalfa,2,pea,BLRV,147,0.966,4.997212274,3.701351105,YES,13.7,Keep,
+One,A2,9,Alfalfa,2,pea,Sham,0,0.854,0,,YES,-1,Drop,
+One,A2,11,Alfalfa,2,pea,Sham,4,0.547,1.609437912,,NO,-0.6,Keep,
+One,AB3,21,Alfalfa,3,alf,BLRV,95,0.709,4.564348191,2.915475947,YES,8.5,Keep,
+One,AB3,22,Alfalfa,3,alf,BLRV,229,0.823,5.438079309,4.679743583,YES,21.9,Keep,
+One,A3,17,Alfalfa,3,alf,Sham,7,0.612,2.079441542,,YES,-0.3,Drop,
+One,A3,20,Alfalfa,3,alf,Sham,56,0.561,4.043051268,2.144761059,NO,4.6,Keep,
+One,AB4,29,Alfalfa,4,alf,BLRV,82,0.697,4.418840608,2.683281573,YES,7.2,Keep,
+One,AB4,30,Alfalfa,4,alf,BLRV,164,0.977,5.105945474,3.924283374,YES,15.4,Keep,
+One,A4,25,Alfalfa,4,alf,Sham,64,0.657,4.17438727,2.323790008,YES,5.4,Drop,
+One,A4,26,Alfalfa,4,alf,Sham,161,0.609,5.087596335,3.885871846,YES,15.1,Drop,
+One,AB5,37,Alfalfa,5,pea,BLRV,1,0.752,0.693147181,,YES,-0.9,Keep,
+One,AB5,38,Alfalfa,5,pea,BLRV,6,1.032,1.945910149,,YES,-0.4,Keep,
+One,A5,33,Alfalfa,5,pea,Sham,0,0.667,0,,YES,-1,Drop,
+One,A5,36,Alfalfa,5,pea,Sham,1,0.583,0.693147181,,NO,-0.9,Keep,
+One,FB1,7,Faba,1,pea,BLRV,230,0.747,5.442417711,4.69041576,YES,22,Keep,
+One,FB1,8,Faba,1,pea,BLRV,249,0.718,5.521460918,4.888762625,YES,23.9,Keep,
+One,FP1,4,Faba,1,pea,PEMV,269,0.309,5.598421959,5.08920426,NO,25.9,Drop,
+One,FP1,11,Faba,1,pea,PEMV,417,3.39,6.035481433,6.379655163,YES,40.7,Keep,
+One,F1,1,Faba,1,pea,Sham,213,0.676,5.365976015,4.50555213,YES,20.3,Drop,
+One,F1,6,Faba,1,pea,Sham,191,0.531,5.257495372,4.254409477,NO,18.1,Keep,
+One,FB2,21,Faba,2,pea,BLRV,443,0.668,6.095824562,6.580273551,YES,43.3,Keep,
+One,FB2,22,Faba,2,pea,BLRV,486,0.775,6.188264123,6.899275324,YES,47.6,Keep,
+One,FP2,16,Faba,2,pea,PEMV,102,0.317,4.634728988,3.033150178,NO,9.2,Drop,
+One,FP2,17,Faba,2,pea,PEMV,313,0.27,5.749392986,5.504543578,NO,30.3,Drop,
+One,F2,13,Faba,2,pea,Sham,405,0.617,6.00635316,6.284902545,YES,39.5,Drop,
+One,F2,20,Faba,2,pea,Sham,482,0.502,6.180016654,6.870225615,NO,47.2,Keep,
+One,FB3,28,Faba,3,alf,BLRV,76,0.571,4.343805422,2.569046516,NO,6.6,Drop,
+One,FB3,34,Faba,3,alf,BLRV,33,0.682,3.526360525,1.516575089,YES,2.3,Keep,
+One,FP3,29,Faba,3,alf,PEMV,176,0.289,5.176149733,4.074309757,NO,16.6,Drop,
+One,FP3,30,Faba,3,alf,PEMV,160,0.234,5.081404365,3.872983346,NO,15,Drop,
+One,F3,25,Faba,3,alf,Sham,68,0.629,4.234106505,2.408318916,YES,5.8,Drop,
+One,F3,33,Faba,3,alf,Sham,145,0.512,4.983606622,3.674234614,NO,13.5,Keep,
+One,FB4,43,Faba,4,alf,BLRV,139,0.982,4.941642423,3.591656999,YES,12.9,Keep,
+One,FB4,44,Faba,4,alf,BLRV,121,0.636,4.804021045,3.33166625,YES,11.1,Keep,
+One,FP4,37,Faba,4,alf,PEMV,85,0.397,4.454347296,2.738612788,NO,7.5,Drop,
+One,FP4,47,Faba,4,alf,PEMV,181,2.917,5.204006687,4.135214626,YES,17.1,Keep,
+One,F4,39,Faba,4,alf,Sham,136,0.433,4.919980926,3.54964787,NO,12.6,Keep,
+One,F4,40,Faba,4,alf,Sham,189,0.358,5.247024072,4.23083916,NO,17.9,Keep,
+One,FB5,55,Faba,5,pea,BLRV,38,0.973,3.663561646,1.673320053,YES,2.8,Keep,
+One,FB5,56,Faba,5,pea,BLRV,155,1.01,5.049856007,3.807886553,YES,14.5,Keep,
+One,FP5,51,Faba,5,pea,PEMV,104,0.336,4.65396035,3.065941943,NO,9.4,Drop,
+One,FP5,59,Faba,5,pea,PEMV,40,1.382,3.713572067,1.732050808,YES,3,Keep,
+One,F5,49,Faba,5,pea,Sham,175,0.636,5.170483995,4.062019202,YES,16.5,Drop,
+One,F5,53,Faba,5,pea,Sham,131,0.415,4.882801923,3.478505426,NO,12.1,Keep,
+One,VB1,7,Hairy Vetch,1,pea,BLRV,91,0.72,4.521788577,2.846049894,YES,8.1,Keep,
+One,VB1,8,Hairy Vetch,1,pea,BLRV,140,0.659,4.94875989,3.605551275,YES,13,Keep,
+One,VP1,1,Hairy Vetch,1,pea,PEMV,638,0.322,6.459904454,7.924645102,NO,62.8,Drop,
+One,VP1,11,Hairy Vetch,1,pea,PEMV,228,0.717,5.433722004,4.669047012,YES,21.8,Keep,
+One,V1,3,Hairy Vetch,1,pea,Sham,269,0.39,5.598421959,5.08920426,NO,25.9,Keep,
+One,V1,4,Hairy Vetch,1,pea,Sham,321,0.313,5.774551546,5.576737397,NO,31.1,Keep,
+One,VB2,19,Hairy Vetch,2,pea,BLRV,115,0.628,4.753590191,3.240370349,YES,10.5,Keep,
+One,VB2,20,Hairy Vetch,2,pea,BLRV,179,0.742,5.192956851,4.110960958,YES,16.9,Keep,
+One,VP2,13,Hairy Vetch,2,pea,PEMV,727,0.329,6.590301048,8.467585252,NO,71.7,Drop,
+One,VP2,23,Hairy Vetch,2,pea,PEMV,217,1.49,5.384495063,4.549725266,YES,20.7,Keep,
+One,V2,15,Hairy Vetch,2,pea,Sham,1611,0.321,7.385230923,12.65306287,NO,160.1,Keep,
+One,V2,16,Hairy Vetch,2,pea,Sham,436,0.268,6.079933195,6.526867549,NO,42.6,Keep,
+One,VB3,29,Hairy Vetch,3,alf,BLRV,24,0.662,3.218875825,1.183215957,YES,1.4,Keep,
+One,VB3,30,Hairy Vetch,3,alf,BLRV,40,0.798,3.713572067,1.732050808,YES,3,Keep,
+One,VP3,33,Hairy Vetch,3,alf,PEMV,49,3.293,3.912023005,1.974841766,YES,3.9,Keep,
+One,VP3,34,Hairy Vetch,3,alf,PEMV,40,0.747,3.713572067,1.732050808,YES,3,Keep,
+One,V3,25,Hairy Vetch,3,alf,Sham,32,0.286,3.496507561,1.483239697,NO,2.2,Keep,
+One,V3,26,Hairy Vetch,3,alf,Sham,48,0.305,3.891820298,1.949358869,NO,3.8,Keep,
+One,VB4,42,Hairy Vetch,4,alf,BLRV,2,0.718,1.098612289,,YES,-0.8,Keep,
+One,VB4,43,Hairy Vetch,4,alf,BLRV,16,0.992,2.833213344,0.774596669,YES,0.6,Keep,
+One,VP4,37,Hairy Vetch,4,alf,PEMV,46,0.552,3.850147602,1.897366596,NO,3.6,Drop,
+One,VP4,46,Hairy Vetch,4,alf,PEMV,63,3.179,4.158883083,2.302172887,YES,5.3,Keep,
+One,V4,38,Hairy Vetch,4,alf,Sham,64,0.309,4.17438727,2.323790008,NO,5.4,Keep,
+One,V4,39,Hairy Vetch,4,alf,Sham,21,0.32,3.091042453,1.048808848,NO,1.1,Keep,
+One,VB5,53,Hairy Vetch,5,pea,BLRV,11,0.808,2.48490665,0.316227766,YES,0.1,Keep,
+One,VB5,54,Hairy Vetch,5,pea,BLRV,12,0.8,2.564949357,0.447213595,YES,0.2,Keep,
+One,VP5,57,Hairy Vetch,5,pea,PEMV,72,1.593,4.290459441,2.48997992,YES,6.2,Keep,
+One,VP5,58,Hairy Vetch,5,pea,PEMV,36,1.574,3.610917913,1.61245155,YES,2.6,Keep,
+One,V5,50,Hairy Vetch,5,pea,Sham,55,0.359,4.025351691,2.121320344,NO,4.5,Keep,
+One,V5,51,Hairy Vetch,5,pea,Sham,10,0.537,2.397895273,0,NO,0,Keep,
+One,LB1,7,Lentil,1,pea,BLRV,154,0.867,5.043425117,3.794733192,YES,14.4,Keep,
+One,LB1,8,Lentil,1,pea,BLRV,149,1.141,5.010635294,3.728270376,YES,13.9,Keep,
+One,LP1,3,Lentil,1,pea,PEMV,142,0.253,4.96284463,3.633180425,NO,13.2,Drop,
+One,LP1,11,Lentil,1,pea,PEMV,173,3.413,5.159055299,4.037325848,YES,16.3,Keep,
+One,L1,1,Lentil,1,pea,Sham,101,0.682,4.624972813,3.016620626,YES,9.1,Drop,
+One,L1,5,Lentil,1,pea,Sham,112,0.401,4.727387819,3.193743885,NO,10.2,Keep,
+One,LB2,17,Lentil,2,pea,BLRV,237,0.897,5.472270674,4.7644517,YES,22.7,Keep,
+One,LB2,18,Lentil,2,pea,BLRV,272,0.908,5.609471795,5.118593557,YES,26.2,Keep,
+One,LP2,21,Lentil,2,pea,PEMV,243,3.408,5.497168225,4.827007354,YES,23.3,Keep,
+One,LP2,22,Lentil,2,pea,PEMV,301,3.114,5.710427017,5.394441584,YES,29.1,Keep,
+One,L2,13,Lentil,2,pea,Sham,167,0.632,5.123963979,3.962322551,YES,15.7,Drop,
+One,L2,15,Lentil,2,pea,Sham,263,0.449,5.575949103,5.029910536,NO,25.3,Keep,
+One,LB3,31,Lentil,3,alf,BLRV,18,0.716,2.944438979,0.894427191,YES,0.8,Keep,
+One,LB3,32,Lentil,3,alf,BLRV,103,0.816,4.644390899,3.049590136,YES,9.3,Keep,
+One,LP3,27,Lentil,3,alf,PEMV,87,0.279,4.477336814,2.774887385,NO,7.7,Drop,
+One,LP3,35,Lentil,3,alf,PEMV,121,3.346,4.804021045,3.33166625,YES,11.1,Keep,
+One,L3,25,Lentil,3,alf,Sham,12,0.649,2.564949357,0.447213595,YES,0.2,Drop,
+One,L3,29,Lentil,3,alf,Sham,36,0.362,3.610917913,1.61245155,NO,2.6,Keep,
+One,LB4,43,Lentil,4,alf,BLRV,159,0.859,5.075173815,3.860051813,YES,14.9,Keep,
+One,LB4,44,Lentil,4,alf,BLRV,138,0.757,4.934473933,3.577708764,YES,12.8,Keep,
+One,LP4,39,Lentil,4,alf,PEMV,68,0.261,4.234106505,2.408318916,NO,5.8,Drop,
+One,LP4,47,Lentil,4,alf,PEMV,66,3.399,4.204692619,2.366431913,YES,5.6,Keep,
+One,L4,37,Lentil,4,alf,Sham,92,0.673,4.532599493,2.863564213,YES,8.2,Drop,
+One,L4,41,Lentil,4,alf,Sham,93,0.298,4.543294782,2.880972058,NO,8.3,Keep,
+One,LB5,53,Lentil,5,pea,BLRV,27,0.733,3.33220451,1.303840481,YES,1.7,Keep,
+One,LB5,54,Lentil,5,pea,BLRV,60,0.766,4.110873864,2.236067977,YES,5,Keep,
+One,LP5,57,Lentil,5,pea,PEMV,91,3.215,4.521788577,2.846049894,YES,8.1,Keep,
+One,LP5,58,Lentil,5,pea,PEMV,25,3.446,3.258096538,1.224744871,YES,1.5,Keep,
+One,L5,50,Lentil,5,pea,Sham,20,0.57,3.044522438,1,NO,1,Keep,
+One,L5,51,Lentil,5,pea,Sham,0,0.294,0,,NO,-1,Keep,
+One,PB1,5,Pea,1,pea,BLRV,341,0.809,5.834810737,5.753259945,YES,33.1,Keep,
+One,PB1,6,Pea,1,pea,BLRV,427,0.843,6.059123196,6.457553716,YES,41.7,Keep,
+One,PP1,9,Pea,1,pea,PEMV,248,3.499,5.517452896,4.878524367,YES,23.8,Keep,
+One,PP1,10,Pea,1,pea,PEMV,131,3.493,4.882801923,3.478505426,YES,12.1,Keep,
+One,P1,1,Pea,1,pea,Sham,111,0.644,4.718498871,3.178049716,YES,10.1,Drop,
+One,P1,4,Pea,1,pea,Sham,266,0.479,5.587248658,5.059644256,NO,25.6,Keep,
+One,PB2,17,Pea,2,pea,BLRV,406,0.761,6.008813185,6.292853089,YES,39.6,Keep,
+One,PB2,18,Pea,2,pea,BLRV,176,0.714,5.176149733,4.074309757,YES,16.6,Keep,
+One,PP2,21,Pea,2,pea,PEMV,413,3.518,6.025865974,6.348228099,YES,40.3,Keep,
+One,PP2,22,Pea,2,pea,PEMV,223,3.514,5.411646052,4.615192304,YES,21.3,Keep,
+One,P2,13,Pea,2,pea,Sham,949,0.442,6.856461985,9.690201236,NO,93.9,Keep,
+One,P2,14,Pea,2,pea,Sham,450,0.414,6.11146734,6.633249581,NO,44,Keep,
+One,PB3,29,Pea,3,alf,BLRV,61,0.655,4.127134385,2.258317958,YES,5.1,Keep,
+One,PB3,30,Pea,3,alf,BLRV,56,0.922,4.043051268,2.144761059,YES,4.6,Keep,
+One,PP3,33,Pea,3,alf,PEMV,65,3.517,4.189654742,2.34520788,YES,5.5,Keep,
+One,PP3,34,Pea,3,alf,PEMV,72,3.515,4.290459441,2.48997992,YES,6.2,Keep,
+One,P3,25,Pea,3,alf,Sham,42,0.321,3.761200116,1.788854382,NO,3.2,Keep,
+One,P3,26,Pea,3,alf,Sham,19,0.355,2.995732274,0.948683298,NO,0.9,Keep,
+One,PB4,41,Pea,4,alf,BLRV,169,0.709,5.135798437,3.987480407,YES,15.9,Keep,
+One,PB4,42,Pea,4,alf,BLRV,124,0.652,4.828313737,3.376388603,YES,11.4,Keep,
+One,PP4,45,Pea,4,alf,PEMV,101,3.512,4.624972813,3.016620626,YES,9.1,Keep,
+One,PP4,46,Pea,4,alf,PEMV,47,3.476,3.871201011,1.923538406,YES,3.7,Keep,
+One,P4,37,Pea,4,alf,Sham,131,0.647,4.882801923,3.478505426,YES,12.1,Drop,
+One,P4,40,Pea,4,alf,Sham,54,0.456,4.007333185,2.097617696,NO,4.4,Keep,
+One,PB5,53,Pea,5,pea,BLRV,272,0.687,5.609471795,5.118593557,YES,26.2,Keep,
+One,PB5,54,Pea,5,pea,BLRV,61,0.701,4.127134385,2.258317958,YES,5.1,Keep,
+One,PP5,57,Pea,5,pea,PEMV,38,3.457,3.663561646,1.673320053,YES,2.8,Keep,
+One,PP5,58,Pea,5,pea,PEMV,26,3.504,3.295836866,1.264911064,YES,1.6,Keep,
+One,P5,49,Pea,5,pea,Sham,78,1.096,4.369447852,2.607680962,YES,6.8,Drop,
+One,P5,50,Pea,5,pea,Sham,210,1.294,5.351858133,4.472135955,YES,20,Drop,
+One,RCB1,9,Red Clover,1,pea,BLRV,161,0.779,5.087596335,3.885871846,YES,15.1,Keep,
+One,RCB1,10,Red Clover,1,pea,BLRV,41,0.684,3.737669618,1.760681686,YES,3.1,Keep,
+One,RCP1,1,Red Clover,1,pea,PEMV,71,0.387,4.276666119,2.469817807,NO,6.1,Drop,
+One,RCP1,2,Red Clover,1,pea,PEMV,1,0.414,0.693147181,,NO,-0.9,Drop,
+One,RC1,5,Red Clover,1,pea,Sham,15,0.506,2.772588722,0.707106781,NO,0.5,Keep,
+One,RC1,6,Red Clover,1,pea,Sham,31,0.279,3.465735903,1.449137675,NO,2.1,Keep,
+One,RCB2,21,Red Clover,2,pea,BLRV,168,0.672,5.129898715,3.974921383,YES,15.8,Keep,
+One,RCB2,22,Red Clover,2,pea,BLRV,1,0.662,0.693147181,,YES,-0.9,Keep,
+One,RCP2,15,Red Clover,2,pea,PEMV,8,0.38,2.197224577,,NO,-0.2,Drop,
+One,RCP2,16,Red Clover,2,pea,PEMV,4,0.264,1.609437912,,NO,-0.6,Drop,
+One,RC2,13,Red Clover,2,pea,Sham,0,0.626,0,,YES,-1,Drop,
+One,RC2,19,Red Clover,2,pea,Sham,8,0.279,2.197224577,,NO,-0.2,Keep,
+One,RCB3,25,Red Clover,3,alf,BLRV,236,0.424,5.468060141,4.75394573,NO,22.6,Drop,
+One,RCB3,26,Red Clover,3,alf,BLRV,22,0.559,3.135494216,1.095445115,NO,1.2,Drop,
+One,RCP3,29,Red Clover,3,alf,PEMV,201,0.323,5.308267697,4.370354677,NO,19.1,Drop,
+One,RCP3,30,Red Clover,3,alf,PEMV,38,0.302,3.663561646,1.673320053,NO,2.8,Drop,
+One,RC3,33,Red Clover,3,alf,Sham,118,0.452,4.779123493,3.286335345,NO,10.8,Keep,
+One,RC3,34,Red Clover,3,alf,Sham,49,0.299,3.912023005,1.974841766,NO,3.9,Keep,
+One,RCB4,45,Red Clover,4,alf,BLRV,16,0.68,2.833213344,0.774596669,YES,0.6,Keep,
+One,RCB4,46,Red Clover,4,alf,BLRV,141,0.697,4.955827058,3.619392214,YES,13.1,Keep,
+One,RCP4,37,Red Clover,4,alf,PEMV,273,0.276,5.613128106,5.128352562,NO,26.3,Drop,
+One,RCP4,38,Red Clover,4,alf,PEMV,93,0.298,4.543294782,2.880972058,NO,8.3,Drop,
+One,RC4,41,Red Clover,4,alf,Sham,373,0.494,5.924255797,6.024948133,NO,36.3,Keep,
+One,RC4,42,Red Clover,4,alf,Sham,54,0.374,4.007333185,2.097617696,NO,4.4,Keep,
+One,RCB5,49,Red Clover,5,pea,BLRV,842,0.569,6.736966958,9.121403401,NO,83.2,Drop,
+One,RCB5,58,Red Clover,5,pea,BLRV,590,0.637,6.381816017,7.615773106,YES,58,Keep,
+One,RCP5,50,Red Clover,5,pea,PEMV,91,0.282,4.521788577,2.846049894,NO,8.1,Drop,
+One,RCP5,51,Red Clover,5,pea,PEMV,273,0.227,5.613128106,5.128352562,NO,26.3,Drop,
+One,RC5,54,Red Clover,5,pea,Sham,189,0.505,5.247024072,4.23083916,NO,17.9,Keep,
+One,RC5,55,Red Clover,5,pea,Sham,133,0.369,4.8978398,3.507135583,NO,12.3,Keep,
+Two,AB1,7,Alfalfa,1,pea,BLRV,20,1.463,3.044522438,1,YES,1,Keep,
+Two,AB1,8,Alfalfa,1,pea,BLRV,5,1.077,1.791759469,,YES,-0.5,Keep,
+Two,A1,1,Alfalfa,1,pea,Sham,13,0.612,2.63905733,0.547722558,YES,0.3,Drop,
+Two,A1,4,Alfalfa,1,pea,Sham,3,0.451,1.386294361,,NO,-0.7,Keep,
+Two,AB2,15,Alfalfa,2,pea,BLRV,0,0.869,0,,YES,-1,Keep,
+Two,AB2,16,Alfalfa,2,pea,BLRV,3,1.139,1.386294361,,YES,-0.7,Keep,
+Two,A2,10,Alfalfa,2,pea,Sham,0,0.947,0,,YES,-1,Drop,
+Two,A2,12,Alfalfa,2,pea,Sham,0,0.56,0,,NO,-1,Keep,
+Two,AB3,23,Alfalfa,3,alf,BLRV,3052,0.782,8.023879993,17.44133022,YES,304.2,Keep,
+Two,AB3,24,Alfalfa,3,alf,BLRV,802,0.953,6.688354714,8.899438185,YES,79.2,Keep,
+Two,A3,18,Alfalfa,3,alf,Sham,476,0.602,6.167516491,6.826419266,YES,46.6,Drop,
+Two,A3,19,Alfalfa,3,alf,Sham,122,0.637,4.812184355,3.346640106,YES,11.2,Drop,
+Two,AB4,31,Alfalfa,4,alf,BLRV,141,0.801,4.955827058,3.619392214,YES,13.1,Keep,
+Two,AB4,32,Alfalfa,4,alf,BLRV,1296,1.129,7.167809184,11.340194,YES,128.6,Keep,
+Two,A4,27,Alfalfa,4,alf,Sham,250,0.739,5.525452939,4.898979486,YES,24,Drop,
+Two,A4,28,Alfalfa,4,alf,Sham,464,0.654,6.142037406,6.737952211,YES,45.4,Drop,
+Two,AB5,39,Alfalfa,5,pea,BLRV,10,0.895,2.397895273,0,YES,0,Keep,
+Two,AB5,40,Alfalfa,5,pea,BLRV,4,1.215,1.609437912,,YES,-0.6,Keep,
+Two,A5,34,Alfalfa,5,pea,Sham,3,0.638,1.386294361,,YES,-0.7,Drop,
+Two,A5,35,Alfalfa,5,pea,Sham,0,0.724,0,,YES,-1,Drop,
+Two,FB1,9,Faba,1,pea,BLRV,476,0.885,6.167516491,6.826419266,YES,46.6,Keep,
+Two,FB1,10,Faba,1,pea,BLRV,285,0.831,5.655991811,5.244044241,YES,27.5,Keep,
+Two,FP1,5,Faba,1,pea,PEMV,194,0.372,5.272999559,4.289522118,NO,18.4,Drop,
+Two,FP1,12,Faba,1,pea,PEMV,175,3.436,5.170483995,4.062019202,YES,16.5,Keep,
+Two,F1,2,Faba,1,pea,Sham,111,0.767,4.718498871,3.178049716,YES,10.1,Drop,
+Two,F1,3,Faba,1,pea,Sham,112,0.681,4.727387819,3.193743885,YES,10.2,Drop,
+Two,FB2,23,Faba,2,pea,BLRV,750,0.786,6.621405652,8.602325267,YES,74,Keep,
+Two,FB2,24,Faba,2,pea,BLRV,727,0.916,6.590301048,8.467585252,YES,71.7,Keep,
+Two,FP2,18,Faba,2,pea,PEMV,484,0.374,6.184148891,6.884765791,NO,47.4,Drop,
+Two,FP2,19,Faba,2,pea,PEMV,884,0.335,6.785587645,9.348796714,NO,87.4,Drop,
+Two,F2,14,Faba,2,pea,Sham,307,0.701,5.730099783,5.449770637,YES,29.7,Drop,
+Two,F2,15,Faba,2,pea,Sham,440,0.65,6.089044875,6.557438524,YES,43,Drop,
+Two,FB3,35,Faba,3,alf,BLRV,254,0.636,5.541263545,4.939635614,YES,24.4,Keep,
+Two,FB3,36,Faba,3,alf,BLRV,272,0.742,5.609471795,5.118593557,YES,26.2,Keep,
+Two,FP3,31,Faba,3,alf,PEMV,473,0.357,6.161207322,6.804410334,NO,46.3,Drop,
+Two,FP3,32,Faba,3,alf,PEMV,177,0.28,5.18178355,4.086563348,NO,16.7,Drop,
+Two,F3,26,Faba,3,alf,Sham,294,0.721,5.686975356,5.329165038,YES,28.4,Drop,
+Two,F3,27,Faba,3,alf,Sham,301,0.672,5.710427017,5.394441584,YES,29.1,Drop,
+Two,FB4,45,Faba,4,alf,BLRV,234,1.132,5.459585514,4.732863826,YES,22.4,Keep,
+Two,FB4,46,Faba,4,alf,BLRV,261,0.684,5.568344504,5.00999002,YES,25.1,Keep,
+Two,FP4,38,Faba,4,alf,PEMV,140,0.504,4.94875989,3.605551275,NO,13,Drop,
+Two,FP4,48,Faba,4,alf,PEMV,418,3.353,6.03787092,6.387487769,YES,40.8,Keep,
+Two,F4,41,Faba,4,alf,Sham,199,0.456,5.298317367,4.347413024,NO,18.9,Keep,
+Two,F4,42,Faba,4,alf,Sham,131,0.451,4.882801923,3.478505426,NO,12.1,Keep,
+Two,FB5,57,Faba,5,pea,BLRV,43,1.094,3.784189634,1.816590212,YES,3.3,Keep,
+Two,FB5,58,Faba,5,pea,BLRV,251,1.168,5.529429088,4.909175083,YES,24.1,Keep,
+Two,FP5,52,Faba,5,pea,PEMV,326,0.427,5.789960171,5.621387729,NO,31.6,Drop,
+Two,FP5,60,Faba,5,pea,PEMV,121,1.763,4.804021045,3.33166625,YES,11.1,Keep,
+Two,F5,50,Faba,5,pea,Sham,41,0.714,3.737669618,1.760681686,YES,3.1,Drop,
+Two,F5,54,Faba,5,pea,Sham,101,0.531,4.624972813,3.016620626,NO,9.1,Keep,
+Two,VB1,9,Hairy Vetch,1,pea,BLRV,83,0.803,4.430816799,2.701851217,YES,7.3,Keep,
+Two,VB1,10,Hairy Vetch,1,pea,BLRV,11,0.717,2.48490665,0.316227766,YES,0.1,Keep,
+Two,VP1,2,Hairy Vetch,1,pea,PEMV,138,0.397,4.934473933,3.577708764,NO,12.8,Drop,
+Two,VP1,12,Hairy Vetch,1,pea,PEMV,858,0.924,6.755768922,9.208691547,YES,84.8,Keep,
+Two,V1,5,Hairy Vetch,1,pea,Sham,341,0.483,5.834810737,5.753259945,NO,33.1,Keep,
+Two,V1,6,Hairy Vetch,1,pea,Sham,295,0.382,5.690359454,5.338539126,NO,28.5,Keep,
+Two,VB2,21,Hairy Vetch,2,pea,BLRV,87,0.689,4.477336814,2.774887385,YES,7.7,Keep,
+Two,VB2,22,Hairy Vetch,2,pea,BLRV,338,0.84,5.826000107,5.727128425,YES,32.8,Keep,
+Two,VP2,14,Hairy Vetch,2,pea,PEMV,1347,0.415,7.206377291,11.56287162,NO,133.7,Drop,
+Two,VP2,24,Hairy Vetch,2,pea,PEMV,962,1.929,6.870053412,9.757048734,YES,95.2,Keep,
+Two,V2,17,Hairy Vetch,2,pea,Sham,652,0.397,6.481577129,8.01249025,NO,64.2,Keep,
+Two,V2,18,Hairy Vetch,2,pea,Sham,1069,0.319,6.975413927,10.29077257,NO,105.9,Keep,
+Two,VB3,31,Hairy Vetch,3,alf,BLRV,18,0.735,2.944438979,0.894427191,YES,0.8,Keep,
+Two,VB3,32,Hairy Vetch,3,alf,BLRV,43,0.9,3.784189634,1.816590212,YES,3.3,Keep,
+Two,VP3,35,Hairy Vetch,3,alf,PEMV,67,3.434,4.219507705,2.387467277,YES,5.7,Keep,
+Two,VP3,36,Hairy Vetch,3,alf,PEMV,207,0.941,5.33753808,4.438468204,YES,19.7,Keep,
+Two,V3,27,Hairy Vetch,3,alf,Sham,9,0.345,2.302585093,,NO,-0.1,Keep,
+Two,V3,28,Hairy Vetch,3,alf,Sham,0,0.376,0,,NO,-1,Keep,
+Two,VB4,44,Hairy Vetch,4,alf,BLRV,21,0.792,3.091042453,1.048808848,YES,1.1,Keep,
+Two,VB4,45,Hairy Vetch,4,alf,BLRV,25,1.142,3.258096538,1.224744871,YES,1.5,Keep,
+Two,VP4,47,Hairy Vetch,4,alf,PEMV,17,3.382,2.890371758,0.836660027,YES,0.7,Keep,
+Two,VP4,48,Hairy Vetch,4,alf,PEMV,226,0.691,5.424950017,4.647580015,YES,21.6,Keep,
+Two,V4,40,Hairy Vetch,4,alf,Sham,0,0.378,0,,NO,-1,Keep,
+Two,V4,41,Hairy Vetch,4,alf,Sham,0,0.406,0,,NO,-1,Keep,
+Two,VB5,55,Hairy Vetch,5,pea,BLRV,112,0.906,4.727387819,3.193743885,YES,10.2,Keep,
+Two,VB5,56,Hairy Vetch,5,pea,BLRV,0,0.911,0,,YES,-1,Keep,
+Two,VP5,59,Hairy Vetch,5,pea,PEMV,53,2.019,3.988984047,2.073644135,YES,4.3,Keep,
+Two,VP5,60,Hairy Vetch,5,pea,PEMV,74,2.007,4.317488114,2.529822128,YES,6.4,Keep十ⅅ倸ㆢ翷,
+Two,V5,49,Hairy Vetch,5,pea,Sham,1,0.682,0.693147181,,YES,-0.9,Drop,
+Two,V5,52,Hairy Vetch,5,pea,Sham,8,0.439,2.197224577,,NO,-0.2,Keep,
+Two,LB1,9,Lentil,1,pea,BLRV,214,0.997,5.370638028,4.516635916,YES,20.4,Keep,
+Two,LB1,10,Lentil,1,pea,BLRV,79,1.434,4.382026635,2.626785107,YES,6.9,Keep,
+Two,LP1,4,Lentil,1,pea,PEMV,189,0.297,5.247024072,4.23083916,NO,17.9,Drop,
+Two,LP1,12,Lentil,1,pea,PEMV,703,3.418,6.556778356,8.324662155,YES,69.3,Keep,
+Two,L1,2,Lentil,1,pea,Sham,307,0.771,5.730099783,5.449770637,YES,29.7,Drop,
+Two,L1,6,Lentil,1,pea,Sham,159,0.503,5.075173815,3.860051813,NO,14.9,Keep,
+Two,LB2,19,Lentil,2,pea,BLRV,609,1.033,6.413458957,7.739509028,YES,59.9,Keep,
+Two,LB2,20,Lentil,2,pea,BLRV,1031,1.023,6.939253946,10.10445446,YES,102.1,Keep,
+Two,LP2,23,Lentil,2,pea,PEMV,1032,3.353,6.940222469,10.10940156,YES,102.2,Keep,
+Two,LP2,24,Lentil,2,pea,PEMV,2353,3.346,7.763871288,15.30686121,YES,234.3,Keep,
+Two,L2,14,Lentil,2,pea,Sham,565,0.69,6.338594078,7.449832213,YES,55.5,Drop,
+Two,L2,16,Lentil,2,pea,Sham,645,0.585,6.470799504,7.968688725,NO,63.5,Keep,
+Two,LB3,33,Lentil,3,alf,BLRV,504,0.774,6.224558429,7.028513356,YES,49.4,Keep,
+Two,LB3,34,Lentil,3,alf,BLRV,155,0.926,5.049856007,3.807886553,YES,14.5,Keep,
+Two,LP3,28,Lentil,3,alf,PEMV,274,0.353,5.616771098,5.138093031,NO,26.4,Drop,
+Two,LP3,36,Lentil,3,alf,PEMV,79,3.344,4.382026635,2.626785107,YES,6.9,Keep,
+Two,L3,26,Lentil,3,alf,Sham,801,0.726,6.687108608,8.893818078,YES,79.1,Drop,
+Two,L3,30,Lentil,3,alf,Sham,249,0.45,5.521460918,4.888762625,NO,23.9,Keep,
+Two,LB4,45,Lentil,4,alf,BLRV,193,0.964,5.267858159,4.277849927,YES,18.3,Keep,
+Two,LB4,46,Lentil,4,alf,BLRV,363,0.853,5.897153868,5.941380311,YES,35.3,Keep,
+Two,LP4,40,Lentil,4,alf,PEMV,211,0.334,5.356586275,4.483302354,NO,20.1,Drop,
+Two,LP4,48,Lentil,4,alf,PEMV,265,3.411,5.583496309,5.049752469,YES,25.5,Keep,
+Two,L4,38,Lentil,4,alf,Sham,396,0.764,5.983936281,6.212889827,YES,38.6,Drop,
+Two,L4,42,Lentil,4,alf,Sham,561,0.367,6.33150185,7.422937424,NO,55.1,Keep,
+Two,LB5,55,Lentil,5,pea,BLRV,0,0.839,0,,YES,-1,Keep,
+Two,LB5,56,Lentil,5,pea,BLRV,102,0.865,4.634728988,3.033150178,YES,9.2,Keep,
+Two,LP5,59,Lentil,5,pea,PEMV,40,3.392,3.713572067,1.732050808,YES,3,Keep,
+Two,LP5,60,Lentil,5,pea,PEMV,30,3.453,3.433987204,1.414213562,YES,2,Keep,
+Two,L5,49,Lentil,5,pea,Sham,99,0.636,4.605170186,2.983286778,YES,8.9,Drop,
+Two,L5,52,Lentil,5,pea,Sham,227,0.367,5.429345629,4.65832588,NO,21.7,Keep,
+Two,PB1,7,Pea,1,pea,BLRV,631,0.928,6.448889394,7.880355322,YES,62.1,Keep,
+Two,PB1,8,Pea,1,pea,BLRV,635,0.975,6.455198563,7.90569415,YES,62.5,Keep,
+Two,PP1,11,Pea,1,pea,PEMV,467,3.501,6.148468296,6.760177512,YES,45.7,Keep,
+Two,PP1,12,Pea,1,pea,PEMV,589,3.504,6.380122537,7.609204952,YES,57.9,Keep,
+Two,P1,2,Pea,1,pea,Sham,604,0.83,6.405228458,7.707139547,YES,59.4,Drop,
+Two,P1,3,Pea,1,pea,Sham,754,0.604,6.626717749,8.625543461,YES,74.4,Drop,
+Two,PB2,19,Pea,2,pea,BLRV,672,0.875,6.51174533,8.136338243,YES,66.2,Keep,
+Two,PB2,20,Pea,2,pea,BLRV,385,0.824,5.955837369,6.123724357,YES,37.5,Keep,
+Two,PP2,23,Pea,2,pea,PEMV,969,3.506,6.877296071,9.792854538,YES,95.9,Keep,
+Two,PP2,24,Pea,2,pea,PEMV,1192,3.519,7.084226422,10.87198234,YES,118.2,Keep,
+Two,P2,15,Pea,2,pea,Sham,893,0.559,6.795705775,9.396807969,NO,88.3,Keep,
+Two,P2,16,Pea,2,pea,Sham,2856,0.542,7.957527402,16.87009188,NO,284.6,Keep,
+Two,PB3,31,Pea,3,alf,BLRV,124,0.754,4.828313737,3.376388603,YES,11.4,Keep,
+Two,PB3,32,Pea,3,alf,BLRV,258,1.053,5.556828062,4.979959839,YES,24.8,Keep,
+Two,PP3,35,Pea,3,alf,PEMV,61,3.519,4.127134385,2.258317958,YES,5.1,Keep,
+Two,PP3,36,Pea,3,alf,PEMV,218,3.516,5.38907173,4.5607017,YES,20.8,Keep,
+Two,P3,27,Pea,3,alf,Sham,91,0.404,4.521788577,2.846049894,NO,8.1,Keep,
+Two,P3,28,Pea,3,alf,Sham,136,0.445,4.919980926,3.54964787,NO,12.6,Keep,
+Two,PB4,43,Pea,4,alf,BLRV,591,0.821,6.383506635,7.6223356,YES,58.1,Keep,
+Two,PB4,44,Pea,4,alf,BLRV,681,0.747,6.525029658,8.191458967,YES,67.1,Keep,
+Two,PP4,47,Pea,4,alf,PEMV,401,3.514,5.996452089,6.25299928,YES,39.1,Keep,
+Two,PP4,48,Pea,4,alf,PEMV,337,3.466,5.823045895,5.718391382,YES,32.7,Keep,
+Two,P4,38,Pea,4,alf,Sham,96,0.981,4.574710979,2.93257566,YES,8.6,Drop,
+Two,P4,39,Pea,4,alf,Sham,543,0.625,6.298949247,7.300684899,YES,53.3,Drop,
+Two,PB5,55,Pea,5,pea,BLRV,79,0.793,4.382026635,2.626785107,YES,6.9,Keep,
+Two,PB5,56,Pea,5,pea,BLRV,182,0.775,5.209486153,4.147288271,YES,17.2,Keep,
+Two,PP5,59,Pea,5,pea,PEMV,257,3.476,5.552959585,4.969909456,YES,24.7,Keep,
+Two,PP5,60,Pea,5,pea,PEMV,17,3.524,2.890371758,0.836660027,YES,0.7,Keep,
+Two,P5,51,Pea,5,pea,Sham,159,1.47,5.075173815,3.860051813,YES,14.9,Drop,
+Two,P5,52,Pea,5,pea,Sham,118,1.636,4.779123493,3.286335345,YES,10.8,Drop,
+Two,RCB1,11,Red Clover,1,pea,BLRV,121,0.952,4.804021045,3.33166625,YES,11.1,Keep,
+Two,RCB1,12,Red Clover,1,pea,BLRV,141,0.739,4.955827058,3.619392214,YES,13.1,Keep,
+Two,RCP1,3,Red Clover,1,pea,PEMV,25,0.482,3.258096538,1.224744871,NO,1.5,Drop,
+Two,RCP1,4,Red Clover,1,pea,PEMV,28,0.519,3.36729583,1.341640786,NO,1.8,Drop,
+Two,RC1,7,Red Clover,1,pea,Sham,342,0.558,5.837730447,5.761944116,NO,33.2,Keep,
+Two,RC1,8,Red Clover,1,pea,Sham,51,0.345,3.951243719,2.024845673,NO,4.1,Keep,
+Two,RCB2,23,Red Clover,2,pea,BLRV,0,0.75,0,,YES,-1,Keep,
+Two,RCB2,24,Red Clover,2,pea,BLRV,21,0.738,3.091042453,1.048808848,YES,1.1,Keep,
+Two,RCP2,17,Red Clover,2,pea,PEMV,59,0.479,4.094344562,2.213594362,NO,4.9,Drop,
+Two,RCP2,18,Red Clover,2,pea,PEMV,4,0.314,1.609437912,,NO,-0.6,Drop,
+Two,RC2,14,Red Clover,2,pea,Sham,86,0.7,4.465908119,2.75680975,YES,7.6,Drop,
+Two,RC2,20,Red Clover,2,pea,Sham,0,0.338,0,,NO,-1,Keep,
+Two,RCB3,27,Red Clover,3,alf,BLRV,202,0.461,5.313205979,4.38178046,NO,19.2,Drop,
+Two,RCB3,28,Red Clover,3,alf,BLRV,41,0.595,3.737669618,1.760681686,NO,3.1,Drop,
+Two,RCP3,31,Red Clover,3,alf,PEMV,232,0.389,5.451038454,4.711687596,NO,22.2,Drop,
+Two,RCP3,32,Red Clover,3,alf,PEMV,94,0.368,4.553876892,2.898275349,NO,8.4,Drop,
+Two,RC3,35,Red Clover,3,alf,Sham,36,0.493,3.610917913,1.61245155,NO,2.6,Keep,
+Two,RC3,36,Red Clover,3,alf,Sham,166,0.361,5.117993812,3.949683532,NO,15.6,Keep,
+Two,RCB4,47,Red Clover,4,alf,BLRV,52,0.764,3.970291914,2.049390153,YES,4.2,Keep,
+Two,RCB4,48,Red Clover,4,alf,BLRV,74,0.764,4.317488114,2.529822128,YES,6.4,Keep,
+Two,RCP4,39,Red Clover,4,alf,PEMV,191,0.338,5.257495372,4.254409477,NO,18.1,Drop,
+Two,RCP4,40,Red Clover,4,alf,PEMV,200,0.365,5.303304908,4.358898944,NO,19,Drop,
+Two,RC4,43,Red Clover,4,alf,Sham,373,0.55,5.924255797,6.024948133,NO,36.3,Keep,
+Two,RC4,44,Red Clover,4,alf,Sham,24,0.48,3.218875825,1.183215957,NO,1.4,Keep,
+Two,RCB5,59,Red Clover,5,pea,BLRV,452,0.632,6.115892125,6.648308055,YES,44.2,Keep,
+Two,RCB5,60,Red Clover,5,pea,BLRV,476,0.712,6.167516491,6.826419266,YES,46.6,Keep,
+Two,RCP5,52,Red Clover,5,pea,PEMV,229,0.345,5.438079309,4.679743583,NO,21.9,Drop,
+Two,RCP5,53,Red Clover,5,pea,PEMV,909,0.269,6.8134446,9.481561053,NO,89.9,Drop,
+Two,RC5,56,Red Clover,5,pea,Sham,230,0.566,5.442417711,4.69041576,NO,22,Keep,
+Two,RC5,57,Red Clover,5,pea,Sham,45,0.464,3.828641396,1.870828693,NO,3.5,Keep,
+Three,,,Alfalfa,1,pea,BLRV,1,,0.693147181,,,,,0
+Three,,,Alfalfa,1,pea,BLRV,14,,2.708050201,,,,,0
+Three,,,Alfalfa,1,pea,Sham,0,,0,,,,,0
+Three,,,Alfalfa,1,pea,Sham,0,,0,,,,,0
+Three,,,Alfalfa,2,pea,BLRV,0,,0,,,,,0
+Three,,,Alfalfa,2,pea,BLRV,96,,4.574710979,,,,,0
+Three,,,Alfalfa,2,pea,Sham,0,,0,,,,,0
+Three,,,Alfalfa,2,pea,Sham,0,,0,,,,,0
+Three,,,Alfalfa,3,alf,BLRV,27,,3.33220451,,,,,0
+Three,,,Alfalfa,3,alf,BLRV,42,,3.761200116,,,,,0
+Three,,,Alfalfa,3,alf,Sham,29,,3.401197382,,,,,0
+Three,,,Alfalfa,3,alf,Sham,107,,4.682131227,,,,,0
+Three,,,Alfalfa,4,alf,BLRV,94,,4.553876892,,,,,0
+Three,,,Alfalfa,4,alf,BLRV,128,,4.859812404,,,,,0
+Three,,,Alfalfa,4,alf,Sham,33,,3.526360525,,,,,0
+Three,,,Alfalfa,4,alf,Sham,72,,4.290459441,,,,,0
+Three,,,Alfalfa,5,pea,BLRV,97,,4.584967479,,,,,0
+Three,,,Alfalfa,5,pea,BLRV,13,,2.63905733,,,,,0
+Three,,,Alfalfa,5,pea,BLRV,126,,4.844187086,,,,,0
+Three,,,Alfalfa,5,pea,Sham,0,,0,,,,,0
+Three,,,Alfalfa,5,pea,Sham,0,,0,,,,,0
+Three,,,Alfalfa,5,pea,Sham,109,,4.700480366,,,,,0
+Three,,,Faba,1,pea,BLRV,442,,6.09356977,,,,,0
+Three,,,Faba,1,pea,BLRV,104,,4.65396035,,,,,0
+Three,,,Faba,1,pea,PEMV,8,,2.197224577,,,,,0
+Three,,,Faba,1,pea,PEMV,0,,0,,,,,0
+Three,,,Faba,1,pea,Sham,461,,6.135564891,,,,,2
+Three,,,Faba,1,pea,Sham,305,,5.723585102,,,,,4
+Three,,,Faba,2,pea,BLRV,247,,5.513428746,,,,,0
+Three,,,Faba,2,pea,BLRV,0,,0,,,,,0
+Three,,,Faba,2,pea,PEMV,0,,0,,,,,0
+Three,,,Faba,2,pea,PEMV,31,,3.465735903,,,,,5
+Three,,,Faba,2,pea,Sham,53,,3.988984047,,,,,0
+Three,,,Faba,2,pea,Sham,74,,4.317488114,,,,,0
+Three,,,Faba,3,alf,BLRV,0,,0,,,,,0
+Three,,,Faba,3,alf,BLRV,433,,6.073044534,,,,,0
+Three,,,Faba,3,alf,PEMV,604,,6.405228458,,,,,0
+Three,,,Faba,3,alf,PEMV,48,,3.891820298,,,,,0
+Three,,,Faba,3,alf,Sham,65,,4.189654742,,,,,0
+Three,,,Faba,3,alf,Sham,359,,5.886104031,,,,,0
+Three,,,Faba,4,alf,BLRV,41,,3.737669618,,,,,0
+Three,,,Faba,4,alf,BLRV,35,,3.583518938,,,,,0
+Three,,,Faba,4,alf,PEMV,305,,5.723585102,,,,,0
+Three,,,Faba,4,alf,PEMV,259,,5.560681631,,,,,0
+Three,,,Faba,4,alf,Sham,61,,4.127134385,,,,,97
+Three,,,Faba,4,alf,Sham,1123,,7.02464903,,,,,9
+Three,,,Faba,5,pea,BLRV,151,,5.023880521,,,,,0
+Three,,,Faba,5,pea,BLRV,183,,5.214935758,,,,,0
+Three,,,Faba,5,pea,BLRV,0,,0,,,,,0
+Three,,,Faba,5,pea,PEMV,119,,4.787491743,,,,,0
+Three,,,Faba,5,pea,PEMV,682,,6.52649486,,,,,0
+Three,,,Faba,5,pea,PEMV,0,,0,,,,,0
+Three,,,Faba,5,pea,Sham,32,,3.496507561,,,,,0
+Three,,,Faba,5,pea,Sham,55,,4.025351691,,,,,0
+Three,,,Faba,5,pea,Sham,0,,0,,,,,0
+Three,,,Hairy Vetch,1,pea,BLRV,136,,4.919980926,,,,,0
+Three,,,Hairy Vetch,1,pea,BLRV,304,,5.720311777,,,,,0
+Three,,,Hairy Vetch,1,pea,PEMV,1303,,7.173191742,,,,,0
+Three,,,Hairy Vetch,1,pea,PEMV,822,,6.712956201,,,,,0
+Three,,,Hairy Vetch,1,pea,Sham,0,,0,,,,,0
+Three,,,Hairy Vetch,1,pea,Sham,823,,6.71417053,,,,,0
+Three,,,Hairy Vetch,2,pea,BLRV,206,,5.332718793,,,,,0
+Three,,,Hairy Vetch,2,pea,BLRV,312,,5.746203191,,,,,0
+Three,,,Hairy Vetch,2,pea,PEMV,587,,6.376726948,,,,,0
+Three,,,Hairy Vetch,2,pea,PEMV,641,,6.464588304,,,,,0
+Three,,,Hairy Vetch,2,pea,Sham,206,,5.332718793,,,,,0
+Three,,,Hairy Vetch,2,pea,Sham,0,,0,,,,,0
+Three,,,Hairy Vetch,3,alf,BLRV,0,,0,,,,,0
+Three,,,Hairy Vetch,3,alf,BLRV,0,,0,,,,,0
+Three,,,Hairy Vetch,3,alf,PEMV,645,,6.470799504,,,,,0
+Three,,,Hairy Vetch,3,alf,PEMV,795,,6.679599186,,,,,0
+Three,,,Hairy Vetch,3,alf,Sham,18,,2.944438979,,,,,0
+Three,,,Hairy Vetch,3,alf,Sham,0,,0,,,,,0
+Three,,,Hairy Vetch,4,alf,BLRV,3,,1.386294361,,,,,0
+Three,,,Hairy Vetch,4,alf,BLRV,17,,2.890371758,,,,,0
+Three,,,Hairy Vetch,4,alf,PEMV,363,,5.897153868,,,,,0
+Three,,,Hairy Vetch,4,alf,PEMV,612,,6.418364936,,,,,0
+Three,,,Hairy Vetch,4,alf,Sham,215,,5.375278408,,,,,0
+Three,,,Hairy Vetch,4,alf,Sham,1327,,7.19142933,,,,,0
+Three,,,Hairy Vetch,5,pea,BLRV,24,,3.218875825,,,,,0
+Three,,,Hairy Vetch,5,pea,BLRV,5,,1.791759469,,,,,0
+Three,,,Hairy Vetch,5,pea,BLRV,21,,3.091042453,,,,,0
+Three,,,Hairy Vetch,5,pea,PEMV,10,,2.397895273,,,,,0
+Three,,,Hairy Vetch,5,pea,PEMV,428,,6.061456919,,,,,0
+Three,,,Hairy Vetch,5,pea,PEMV,36,,3.610917913,,,,,0
+Three,,,Hairy Vetch,5,pea,Sham,972,,6.880384082,,,,,0
+Three,,,Hairy Vetch,5,pea,Sham,187,,5.236441963,,,,,0
+Three,,,Hairy Vetch,5,pea,Sham,0,,0,,,,,
+Three,,,Lentil,1,pea,BLRV,190,,5.252273428,,,,,0
+Three,,,Lentil,1,pea,BLRV,47,,3.871201011,,,,,0
+Three,,,Lentil,1,pea,PEMV,704,,6.558197803,,,,,0
+Three,,,Lentil,1,pea,PEMV,388,,5.963579344,,,,,0
+Three,,,Lentil,1,pea,Sham,36,,3.610917913,,,,,0
+Three,,,Lentil,1,pea,Sham,171,,5.147494477,,,,,39
+Three,,,Lentil,2,pea,BLRV,147,,4.997212274,,,,,0
+Three,,,Lentil,2,pea,BLRV,63,,4.158883083,,,,,0
+Three,,,Lentil,2,pea,PEMV,549,,6.309918278,,,,,0
+Three,,,Lentil,2,pea,PEMV,83,,4.430816799,,,,,0
+Three,,,Lentil,2,pea,Sham,243,,5.497168225,,,,,0
+Three,,,Lentil,2,pea,Sham,285,,5.655991811,,,,,0
+Three,,,Lentil,3,alf,BLRV,26,,3.295836866,,,,,0
+Three,,,Lentil,3,alf,BLRV,37,,3.63758616,,,,,0
+Three,,,Lentil,3,alf,PEMV,403,,6.001414878,,,,,0
+Three,,,Lentil,3,alf,PEMV,98,,4.59511985,,,,,0
+Three,,,Lentil,3,alf,Sham,297,,5.697093487,,,,,0
+Three,,,Lentil,3,alf,Sham,0,,0,,,,,0
+Three,,,Lentil,4,alf,BLRV,32,,3.496507561,,,,,0
+Three,,,Lentil,4,alf,BLRV,0,,0,,,,,0
+Three,,,Lentil,4,alf,PEMV,876,,6.776506992,,,,,0
+Three,,,Lentil,4,alf,PEMV,501,,6.21860012,,,,,0
+Three,,,Lentil,4,alf,Sham,81,,4.406719247,,,,,0
+Three,,,Lentil,4,alf,Sham,0,,0,,,,,0
+Three,,,Lentil,5,pea,BLRV,25,,3.258096538,,,,,0
+Three,,,Lentil,5,pea,BLRV,6,,1.945910149,,,,,0
+Three,,,Lentil,5,pea,BLRV,0,,0,,,,,0
+Three,,,Lentil,5,pea,PEMV,397,,5.986452005,,,,,0
+Three,,,Lentil,5,pea,PEMV,1009,,6.91770561,,,,,0
+Three,,,Lentil,5,pea,PEMV,0,,0,,,,,0
+Three,,,Lentil,5,pea,Sham,10,,2.397895273,,,,,3
+Three,,,Lentil,5,pea,Sham,312,,5.746203191,,,,,5
+Three,,,Lentil,5,pea,Sham,93,,4.543294782,,,,,0
+Three,,,Pea,1,pea,BLRV,85,,4.454347296,,,,,0
+Three,,,Pea,1,pea,BLRV,51,,3.951243719,,,,,0
+Three,,,Pea,1,pea,PEMV,204,,5.323009979,,,,,0
+Three,,,Pea,1,pea,PEMV,1124,,7.025538315,,,,,0
+Three,,,Pea,1,pea,Sham,58,,4.077537444,,,,,0
+Three,,,Pea,1,pea,Sham,41,,3.737669618,,,,,1
+Three,,,Pea,2,pea,BLRV,137,,4.927253685,,,,,0
+Three,,,Pea,2,pea,BLRV,133,,4.8978398,,,,,0
+Three,,,Pea,2,pea,PEMV,37,,3.63758616,,,,,0
+Three,,,Pea,2,pea,PEMV,0,,0,,,,,0
+Three,,,Pea,2,pea,Sham,76,,4.343805422,,,,,0
+Three,,,Pea,2,pea,Sham,163,,5.099866428,,,,,0
+Three,,,Pea,3,alf,BLRV,33,,3.526360525,,,,,0
+Three,,,Pea,3,alf,BLRV,0,,0,,,,,0
+Three,,,Pea,3,alf,PEMV,252,,5.533389489,,,,,0
+Three,,,Pea,3,alf,PEMV,295,,5.690359454,,,,,0
+Three,,,Pea,3,alf,Sham,54,,4.007333185,,,,,0
+Three,,,Pea,3,alf,Sham,44,,3.80666249,,,,,0
+Three,,,Pea,4,alf,BLRV,12,,2.564949357,,,,,0
+Three,,,Pea,4,alf,BLRV,0,,0,,,,,0
+Three,,,Pea,4,alf,PEMV,340,,5.831882477,,,,,0
+Three,,,Pea,4,alf,PEMV,0,,0,,,,,0
+Three,,,Pea,4,alf,Sham,68,,4.234106505,,,,,0
+Three,,,Pea,4,alf,Sham,3,,1.386294361,,,,,0
+Three,,,Pea,5,pea,BLRV,26,,3.295836866,,,,,0
+Three,,,Pea,5,pea,BLRV,40,,3.713572067,,,,,0
+Three,,,Pea,5,pea,BLRV,0,,0,,,,,0
+Three,,,Pea,5,pea,PEMV,1,,0.693147181,,,,,0
+Three,,,Pea,5,pea,PEMV,598,,6.395261598,,,,,0
+Three,,,Pea,5,pea,PEMV,0,,0,,,,,0
+Three,,,Pea,5,pea,Sham,11,,2.48490665,,,,,0
+Three,,,Pea,5,pea,Sham,23,,3.17805383,,,,,0
+Three,,,Pea,5,pea,Sham,37,,3.63758616,,,,,0
+Three,,,Red Clover,1,pea,BLRV,0,,0,,,,,6
+Three,,,Red Clover,1,pea,BLRV,13,,2.63905733,,,,,0
+Three,,,Red Clover,1,pea,PEMV,0,,0,,,,,84
+Three,,,Red Clover,1,pea,PEMV,12,,2.564949357,,,,,214
+Three,,,Red Clover,1,pea,Sham,2,,1.098612289,,,,,8
+Three,,,Red Clover,1,pea,Sham,0,,0,,,,,46
+Three,,,Red Clover,2,pea,BLRV,0,,0,,,,,0
+Three,,,Red Clover,2,pea,BLRV,0,,0,,,,,0
+Three,,,Red Clover,2,pea,PEMV,12,,2.564949357,,,,,0
+Three,,,Red Clover,2,pea,PEMV,1,,0.693147181,,,,,0
+Three,,,Red Clover,2,pea,Sham,0,,0,,,,,1
+Three,,,Red Clover,2,pea,Sham,2,,1.098612289,,,,,1
+Three,,,Red Clover,3,alf,BLRV,0,,0,,,,,0
+Three,,,Red Clover,3,alf,BLRV,0,,0,,,,,0
+Three,,,Red Clover,3,alf,PEMV,6,,1.945910149,,,,,68
+Three,,,Red Clover,3,alf,PEMV,7,,2.079441542,,,,,22
+Three,,,Red Clover,3,alf,Sham,3,,1.386294361,,,,,0
+Three,,,Red Clover,3,alf,Sham,0,,0,,,,,0
+Three,,,Red Clover,4,alf,BLRV,0,,0,,,,,0
+Three,,,Red Clover,4,alf,BLRV,0,,0,,,,,0
+Three,,,Red Clover,4,alf,PEMV,1,,0.693147181,,,,,2
+Three,,,Red Clover,4,alf,PEMV,0,,0,,,,,51
+Three,,,Red Clover,4,alf,Sham,0,,0,,,,,4
+Three,,,Red Clover,4,alf,Sham,5,,1.791759469,,,,,44
+Three,,,Red Clover,5,pea,BLRV,0,,0,,,,,0
+Three,,,Red Clover,5,pea,BLRV,0,,0,,,,,0
+Three,,,Red Clover,5,pea,BLRV,0,,0,,,,,0
+Three,,,Red Clover,5,pea,PEMV,39,,3.688879454,,,,,0
+Three,,,Red Clover,5,pea,PEMV,11,,2.48490665,,,,,0
+Three,,,Red Clover,5,pea,PEMV,0,,0,,,,,0
+Three,,,Red Clover,5,pea,Sham,15,,2.772588722,,,,,41
+Three,,,Red Clover,5,pea,Sham,4,,1.609437912,,,,,6
+Three,,,Red Clover,5,pea,Sham,13,,2.63905733,,,,,76

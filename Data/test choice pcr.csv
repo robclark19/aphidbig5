@@ -1,0 +1,171 @@
+Plant_sp,Genotype,Biotype,Rep,Virus,PEMV.test,Aphid counts,Dead aphids IN REP,Fresh Weight,Proportion_ 50,Proportion_living,Primers used,PCR outcome,PEMV,BLRV
+Alfalfa,3,alfalfa,1,BLRV,,4,1,12.9,0.08,0.082,PEMV+BLRV,Negative,0,0
+Alfalfa,5,pea,1,SHAM,Sham,2,3,18.6,0.04,0.043,PEMV+BLRV,Negative,0,0
+Alfalfa,5,pea,1,BLRV,,2,4,16.5,0.04,0.043,PEMV+BLRV,Negative,0,0
+Alfalfa,3,alfalfa,1,SHAM,Sham,8,2,18.1,0.16,0.167,PEMV+BLRV,Negative,0,0
+Alfalfa,3,alfalfa,2,BLRV,,11,3,18.6,0.22,0.234,PEMV+BLRV,Negative,0,0
+Alfalfa,5,pea,2,SHAM,Sham,2,5,20.9,0.04,0.044,PEMV+BLRV,PEMV+,1,0
+Alfalfa,3,alfalfa,2,SHAM,Sham,9,1,16.3,0.18,0.184,PEMV+BLRV,Negative x2,0,0
+Alfalfa,5,pea,2,BLRV,,2,6,19.8,0.04,0.045,PEMV+BLRV,Negative,0,0
+Alfalfa,3,alfalfa,3,BLRV,,4,4,19.9,0.08,0.087,PEMV+BLRV,Negative,0,0
+Alfalfa,3,alfalfa,3,SHAM,Sham,1,3,25,0.02,0.021,PEMV+BLRV,Negative(x2),0,0
+Alfalfa,3,alfalfa,3,SHAM,Sham,6,5,24.1,0.12,0.133,PEMV+BLRV,,,
+Alfalfa,5,pea,3,BLRV,,3,0,28.6,0.06,0.06,PEMV+BLRV,Negative,0,0
+Alfalfa,5,pea,4,BLRV,,2,1,22.6,0.04,0.041,PEMV+BLRV,Negative,0,0
+Alfalfa,3,alfalfa,4,SHAM,Sham,6,3,20.2,0.12,0.128,PEMV+BLRV,,,
+Alfalfa,5,pea,4,SHAM,Sham,3,2,23.5,0.06,0.063,PEMV+BLRV,Negative,0,0
+Alfalfa,3,alfalfa,4,BLRV,,7,2,20.5,0.14,0.146,PEMV+BLRV,Negative,0,0
+Alfalfa,5,pea,5,BLRV,,3,3,22,0.06,0.064,PEMV+BLRV,Negative,0,0
+Alfalfa,3,alfalfa,5,SHAM,Sham,13,5,25.1,0.26,0.289,PEMV+BLRV,Negative,0,0
+Alfalfa,5,pea,5,SHAM,Sham,0,4,25.3,0,0,PEMV+BLRV,,,
+Alfalfa,3,alfalfa,5,BLRV,,8,5,18.9,0.16,0.178,PEMV+BLRV,Negative,0,0
+Fava,5,pea,2,SHAM,Sham,5,5,18.9,0.1,0.111,PEMV+BLRV,Negative,0,0
+Fava,3,alfalfa,2,SHAM,Sham,12,1,23.1,0.24,0.245,PEMV+BLRV,Negative,0,0
+Fava,3,alfalfa,2,PEMV,Negative,4,5,22.3,0.08,0.089,PEMV+BLRV,Negative,0,0
+Fava,5,pea,2,BLRV,,5,6,29.1,0.1,0.114,PEMV+BLRV,Negative,0,0
+Fava,3,alfalfa,3,PEMV,Negative,9,0,30.3,0.18,0.18,PEMV+BLRV,,,
+Fava,3,alfalfa,3,SHAM,Sham,8,3,25,0.16,0.17,PEMV+BLRV,,,
+Fava,3,alfalfa,3,PEMV,Negative,28,0,33.6,0.56,0.56,PEMV+BLRV,Negative,0,0
+Fava,3,alfalfa,3,SHAM,Sham,8,5,22,0.16,0.178,PEMV+BLRV,Negative,0,0
+Fava,5,pea,3,BLRV,,8,0,33,0.16,0.16,PEMV+BLRV,Negative,0,0
+Fava,3,alfalfa,4,PEMV,Postive,9,4,34.5,0.18,0.196,PEMV+BLRV,PEMV+,1,0
+Fava,5,pea,4,BLRV,,10,1,35.5,0.2,0.204,PEMV+BLRV,Negative,0,0
+Fava,3,alfalfa,4,SHAM,Sham,15,3,29.3,0.3,0.319,PEMV+BLRV,Negative,0,0
+Fava,5,pea,4,PEMV,Negative,6,3,30.2,0.12,0.128,PEMV+BLRV,Negative,0,0
+Fava,5,pea,4,SHAM,Sham,10,2,27.8,0.2,0.208,PEMV+BLRV,Negative,0,0
+Fava,3,alfalfa,4,BLRV,,5,2,17.5,0.1,0.104,PEMV+BLRV,Negative,0,0
+Fava,3,alfalfa,4,BLRV,,15,2,32.4,0.3,0.313,PEMV+BLRV,Negative,0,0
+Fava,5,pea,5,BLRV,,14,3,32,0.28,0.298,PEMV+BLRV,Negative,0,0
+Fava,5,pea,5,PEMV,Negative,8,4,26.9,0.16,0.174,PEMV+BLRV,Negative,0,0
+Fava,3,alfalfa,5,SHAM,Sham,7,5,18.1,0.14,0.156,PEMV+BLRV,Negative,0,0
+Fava,5,pea,5,SHAM,Sham,8,4,17.6,0.16,0.174,PEMV+BLRV,Negative,0,0
+Fava,3,alfalfa,5,BLRV,,7,5,29.6,0.14,0.156,PEMV+BLRV,Negative,0,0
+Fava,3,alfalfa,5,PEMV,Negative,9,6,24.4,0.18,0.205,PEMV+BLRV,Negative,0,0
+Fava,3,alfalfa,1,BLRV,,15,1,22.5,0.3,0.306,PEMV+BLRV,Negative,0,0
+Fava,3,alfalfa,1,PEMV,Negative,15,4,25.7,0.3,0.326,PEMV+BLRV,Negative,0,0
+Fava,5,pea,1,SHAM,Sham,7,3,24.4,0.14,0.149,PEMV+BLRV,Negative,0,0
+Fava,5,pea,1,BLRV,,7,4,24.4,0.14,0.152,PEMV+BLRV,,,
+Fava,5,pea,1,PEMV,Postive,16,3,20.6,0.32,0.34,PEMV+BLRV,PEMV+,1,0
+Fava,3,alfalfa,1,SHAM,Sham,12,2,20.5,0.24,0.25,PEMV+BLRV,Negative,0,0
+Fava,5,pea,2,PEMV,Negative,10,4,19.9,0.2,0.217,PEMV+BLRV,Negative,0,0
+Fava,3,alfalfa,2,BLRV,,10,3,34,0.2,0.213,PEMV+BLRV,Negative,0,0
+Hairy Vetch,3,alfalfa,1,BLRV,,2,1,8.8,0.04,0.041,PEMV+BLRV,Negative,0,0
+Hairy Vetch,3,alfalfa,1,PEMV,Negative,10,4,6.8,0.2,0.217,PEMV+BLRV,Negative,0,0
+Hairy Vetch,5,pea,1,SHAM,Sham,3,3,10.1,0.06,0.064,PEMV+BLRV,Negative,0,0
+Hairy Vetch,5,pea,1,BLRV,,7,4,9.5,0.14,0.152,PEMV+BLRV,Negative,0,0
+Hairy Vetch,5,pea,1,PEMV,Negative,3,3,9.1,0.06,0.064,PEMV+BLRV,Negative,0,0
+Hairy Vetch,3,alfalfa,1,SHAM,Sham,6,2,9,0.12,0.125,PEMV+BLRV,Negative,0,0
+Hairy Vetch,5,pea,2,PEMV,Negative,6,4,8,0.12,0.13,PEMV+BLRV,Negative,0,0
+Hairy Vetch,3,alfalfa,2,BLRV,,4,3,11,0.08,0.085,PEMV+BLRV,Negative,0,0
+Hairy Vetch,5,pea,2,SHAM,Sham,7,5,12.6,0.14,0.156,PEMV+BLRV,Negative,0,0
+Hairy Vetch,3,alfalfa,2,SHAM,Sham,7,1,13.5,0.14,0.143,PEMV+BLRV,Negative,0,0
+Hairy Vetch,3,alfalfa,2,PEMV,Negative,8,5,13.3,0.16,0.178,PEMV+BLRV,Negative,0,0
+Hairy Vetch,5,pea,2,BLRV,,10,6,12.4,0.2,0.227,PEMV+BLRV,Negative,0,0
+Hairy Vetch,3,alfalfa,3,PEMV,Negative,7,0,9.5,0.14,0.14,PEMV+BLRV,PEMV+,1,0
+Hairy Vetch,3,alfalfa,3,BLRV,,10,4,20.9,0.2,0.217,PEMV+BLRV,Negative,0,0
+Hairy Vetch,3,alfalfa,3,SHAM,Sham,9,3,19.1,0.18,0.191,PEMV+BLRV,,,
+Hairy Vetch,3,alfalfa,3,PEMV,Postive,8,0,21.4,0.16,0.16,PEMV+BLRV,PEMV+,1,0
+Hairy Vetch,3,alfalfa,3,SHAM,Sham,6,5,14.2,0.12,0.133,PEMV+BLRV,,,
+Hairy Vetch,5,pea,3,BLRV,,11,0,18.9,0.22,0.22,PEMV+BLRV,Negative,0,0
+Hairy Vetch,3,alfalfa,4,PEMV,Postive,8,4,25.6,0.16,0.174,PEMV+BLRV,PEMV+,1,0
+Hairy Vetch,5,pea,4,BLRV,,10,1,20,0.2,0.204,PEMV+BLRV,Negative,0,0
+Hairy Vetch,3,alfalfa,4,SHAM,Sham,4,3,12.9,0.08,0.085,PEMV+BLRV,Negative,0,0
+Hairy Vetch,5,pea,4,PEMV,Negative,11,3,16.6,0.22,0.234,PEMV+BLRV,Negative,0,0
+Hairy Vetch,5,pea,4,SHAM,Sham,7,2,13.4,0.14,0.146,PEMV+BLRV,Negative,0,0
+Hairy Vetch,5,pea,5,BLRV,,9,3,17.9,0.18,0.191,PEMV+BLRV,Negative,0,0
+Hairy Vetch,5,pea,5,PEMV,Negative,4,4,19.9,0.08,0.087,PEMV+BLRV,Negative,0,0
+Hairy Vetch,3,alfalfa,5,SHAM,Sham,10,5,12.8,0.2,0.222,PEMV+BLRV,Negative,0,0
+Hairy Vetch,5,pea,5,SHAM,Sham,6,4,15.3,0.12,0.13,PEMV+BLRV,Negative(x2),0,0
+Hairy Vetch,3,alfalfa,5,BLRV,,8,5,18.2,0.16,0.178,PEMV+BLRV,Negative,0,0
+Hairy Vetch,3,alfalfa,5,PEMV,Negative,6,6,26.2,0.12,0.136,PEMV+BLRV,Negative,0,0
+Lentil,5,pea,2,SHAM,Sham,4,5,11.2,0.08,0.089,PEMV+BLRV,Negative,0,0
+Lentil,3,alfalfa,2,SHAM,Sham,6,1,11.1,0.12,0.122,PEMV+BLRV,Negative,0,0
+Lentil,3,alfalfa,2,PEMV,Negative,9,5,11.1,0.18,0.2,PEMV+BLRV,Negative,0,0
+Lentil,5,pea,2,BLRV,,4,6,15.6,0.08,0.091,PEMV+BLRV,Negative,0,0
+Lentil,3,alfalfa,3,PEMV,Postive,6,0,14.9,0.12,0.12,PEMV+BLRV,PEMV+,1,0
+Lentil,3,alfalfa,3,BLRV,,9,4,18,0.18,0.196,PEMV+BLRV,Negative,0,0
+Lentil,3,alfalfa,3,SHAM,Sham,10,3,13.6,0.2,0.213,PEMV+BLRV,Negative,0,0
+Lentil,3,alfalfa,3,PEMV,Postive,4,0,17.3,0.08,0.08,PEMV+BLRV,PEMV+,1,0
+Lentil,3,alfalfa,3,SHAM,Sham,8,5,11.7,0.16,0.178,PEMV+BLRV,Negative,0,0
+Lentil,5,pea,3,BLRV,,10,0,16.1,0.2,0.2,PEMV+BLRV,Negative,0,0
+Lentil,3,alfalfa,4,PEMV,Postive,7,4,16.8,0.14,0.152,PEMV+BLRV,PEMV+,1,0
+Lentil,5,pea,4,BLRV,,5,1,18.1,0.1,0.102,PEMV+BLRV,Negative,0,0
+Lentil,3,alfalfa,4,SHAM,Sham,7,3,16.9,0.14,0.149,PEMV+BLRV,Negative,0,0
+Lentil,5,pea,4,PEMV,Negative,6,3,16.9,0.12,0.128,PEMV+BLRV,Negative,0,0
+Lentil,5,pea,4,SHAM,Sham,6,2,14.3,0.12,0.125,PEMV+BLRV,Negative,0,0
+Lentil,3,alfalfa,4,BLRV,,14,2,20.4,0.28,0.292,PEMV+BLRV,Negative,0,0
+Lentil,5,pea,5,BLRV,,5,3,19.1,0.1,0.106,PEMV+BLRV,Negative,0,0
+Lentil,5,pea,5,PEMV,Negative,10,4,15,0.2,0.217,PEMV+BLRV,Negative,0,0
+Lentil,3,alfalfa,5,SHAM,Sham,7,5,19.5,0.14,0.156,PEMV+BLRV,Negative,0,0
+Lentil,5,pea,5,SHAM,Sham,4,4,13.8,0.08,0.087,PEMV+BLRV,Negative,0,0
+Lentil,3,alfalfa,5,BLRV,,8,5,17.2,0.16,0.178,PEMV+BLRV,Negative,0,0
+Lentil,3,alfalfa,5,PEMV,Postive,8,6,16.5,0.16,0.182,PEMV+BLRV,PEMV+,1,0
+Lentil,3,alfalfa,1,BLRV,,9,1,11.9,0.18,0.184,PEMV+BLRV,Negative,0,0
+Lentil,3,alfalfa,1,PEMV,Negative,4,4,8.5,0.08,0.087,PEMV+BLRV,Negative,0,0
+Lentil,3,alfalfa,1,PEMV,Postive,6,4,8.2,0.12,0.13,PEMV+BLRV,PEMV+,1,0
+Lentil,5,pea,1,SHAM,Sham,7,3,9.5,0.14,0.149,PEMV+BLRV,Negative,0,0
+Lentil,5,pea,1,BLRV,,10,4,11.2,0.2,0.217,PEMV+BLRV,Negative,0,0
+Lentil,5,pea,1,PEMV,Postive,11,3,9.5,0.22,0.234,PEMV+BLRV,PEMV+,1,0
+Lentil,3,alfalfa,1,SHAM,Sham,6,2,12.1,0.12,0.125,PEMV+BLRV,Negative,0,0
+Lentil,5,pea,2,PEMV,Postive,8,4,10.3,0.16,0.174,PEMV+BLRV,PEMV+,0,0
+Lentil,3,alfalfa,2,BLRV,,7,3,13.8,0.14,0.149,PEMV+BLRV,Negative,0,0
+Pea,5,pea,2,SHAM,Sham,4,5,11,0.08,0.089,PEMV+BLRV,Negative,0,0
+Pea,3,alfalfa,2,SHAM,Sham,4,1,10.5,0.08,0.082,PEMV+BLRV,,,
+Pea,3,alfalfa,2,PEMV,Postive,14,5,9.1,0.28,0.311,PEMV+BLRV,PEMV+,,
+Pea,5,pea,2,BLRV,,9,6,12.6,0.18,0.205,PEMV+BLRV,Negative,0,0
+Pea,3,alfalfa,3,PEMV,Postive,12,0,13.6,0.24,0.24,PEMV+BLRV,PEMV+,1,0
+Pea,3,alfalfa,3,BLRV,,8,4,36.7,0.16,0.174,PEMV+BLRV,Negative,0,0
+Pea,3,alfalfa,3,BLRV,,8,4,13.5,0.16,0.174,PEMV+BLRV,Negative,0,0
+Pea,3,alfalfa,3,SHAM,Sham,9,3,17.9,0.18,0.191,PEMV+BLRV,Negative,0,0
+Pea,3,alfalfa,3,PEMV,Postive,6,0,18.7,0.12,0.12,PEMV+BLRV,PEMV+,1,0
+Pea,3,alfalfa,3,SHAM,Sham,8,5,16.6,0.16,0.178,PEMV+BLRV,Negative,0,0
+Pea,5,pea,3,BLRV,,4,0,19.6,0.08,0.08,PEMV+BLRV,Negative,0,0
+Pea,3,alfalfa,4,PEMV,Postive,9,4,12.9,0.18,0.196,PEMV+BLRV,PEMV+,1,0
+Pea,5,pea,4,BLRV,,7,1,18.2,0.14,0.143,PEMV+BLRV,Negative,0,0
+Pea,3,alfalfa,4,SHAM,Sham,4,3,15.8,0.08,0.085,PEMV+BLRV,Negative,0,0
+Pea,5,pea,4,PEMV,Postive,5,3,18.4,0.1,0.106,PEMV+BLRV,PEMV+,1,0
+Pea,5,pea,4,SHAM,Sham,5,2,14.6,0.1,0.104,PEMV+BLRV,Negative,0,0
+Pea,3,alfalfa,4,BLRV,,3,2,17.6,0.06,0.063,PEMV+BLRV,Negative,0,0
+Pea,5,pea,5,BLRV,,6,3,15.5,0.12,0.128,PEMV+BLRV,Negative,0,0
+Pea,5,pea,5,PEMV,Postive,6,4,17.6,0.12,0.13,PEMV+BLRV,PEMV+,1,0
+Pea,3,alfalfa,5,SHAM,Sham,4,5,22.4,0.08,0.089,PEMV+BLRV,,,
+Pea,5,pea,5,SHAM,Sham,4,4,15.2,0.08,0.087,PEMV+BLRV,Negative(x2),0,0
+Pea,3,alfalfa,5,BLRV,,6,5,19.3,0.12,0.133,PEMV+BLRV,Negative,0,0
+Pea,3,alfalfa,5,PEMV,Postive,11,6,11,0.22,0.25,PEMV+BLRV,PEMV+,1,0
+Pea,3,alfalfa,1,BLRV,,8,1,9.8,0.16,0.163,PEMV+BLRV,,,
+Pea,5,pea,1,SHAM,Sham,6,3,10.2,0.12,0.128,PEMV+BLRV,Negative,0,0
+Pea,5,pea,1,BLRV,,6,4,12.5,0.12,0.13,PEMV+BLRV,Negative,0,0
+Pea,5,pea,1,PEMV,Postive,3,3,9.5,0.06,0.064,PEMV+BLRV,PEMV+,,
+Pea,3,alfalfa,1,SHAM,Sham,10,2,11,0.2,0.208,PEMV+BLRV,"BLRV+, Negative",0,1
+Pea,5,pea,2,PEMV,Negative,7,4,9.4,0.14,0.152,PEMV+BLRV,Negative,0,0
+Pea,3,alfalfa,2,BLRV,,5,3,13,0.1,0.106,PEMV+BLRV,Negative,0,0
+Red Clover,3,alfalfa,2,BLRV,,6,3,17.8,0.12,0.128,PEMV+BLRV,Negative,0,0
+Red Clover,5,pea,2,SHAM,Sham,19,5,11.3,0.38,0.422,PEMV+BLRV,Negative,0,0
+Red Clover,3,alfalfa,2,SHAM,Sham,9,1,11.5,0.18,0.184,PEMV+BLRV,Negative,0,0
+Red Clover,3,alfalfa,2,PEMV,Negative,6,5,18.8,0.12,0.133,PEMV+BLRV,Negative,0,0
+Red Clover,5,pea,2,BLRV,,9,6,20.6,0.18,0.205,PEMV+BLRV,Negative,0,0
+Red Clover,3,alfalfa,3,PEMV,Negative,14,0,24,0.28,0.28,PEMV+BLRV,Negative,0,0
+Red Clover,3,alfalfa,3,BLRV,,4,4,24,0.08,0.087,PEMV+BLRV,Negative,0,0
+Red Clover,3,alfalfa,3,SHAM,Sham,9,3,13.3,0.18,0.191,PEMV+BLRV,Negative,0,0
+Red Clover,3,alfalfa,3,PEMV,Negative,2,0,24,0.04,0.04,PEMV+BLRV,Negative,0,0
+Red Clover,3,alfalfa,3,SHAM,Sham,5,5,14.6,0.1,0.111,PEMV+BLRV,Negative,0,0
+Red Clover,5,pea,3,BLRV,,13,0,24.5,0.26,0.26,PEMV+BLRV,PEMV+,1,0
+Red Clover,3,alfalfa,4,PEMV,Negative,6,4,19.1,0.12,0.13,PEMV+BLRV,Negative,0,0
+Red Clover,5,pea,4,BLRV,,13,1,22.9,0.26,0.265,PEMV+BLRV,Negative,0,0
+Red Clover,3,alfalfa,4,SHAM,Sham,5,3,10.9,0.1,0.106,PEMV+BLRV,,,
+Red Clover,5,pea,4,PEMV,Negative,15,3,23.4,0.3,0.319,PEMV+BLRV,Negative,0,0
+Red Clover,5,pea,4,SHAM,Sham,15,2,13.1,0.3,0.313,PEMV+BLRV,Negative(x2),0,0
+Red Clover,3,alfalfa,4,BLRV,,2,2,23.6,0.04,0.042,PEMV+BLRV,Negative,0,0
+Red Clover,5,pea,5,BLRV,,8,3,26.6,0.16,0.17,PEMV+BLRV,Negative,0,0
+Red Clover,5,pea,5,PEMV,Negative,15,4,23.4,0.3,0.326,PEMV+BLRV,Negative,0,0
+Red Clover,3,alfalfa,5,SHAM,Sham,1,5,14.3,0.02,0.022,PEMV+BLRV,Negative,0,0
+Red Clover,5,pea,5,SHAM,Sham,21,4,119.9,0.42,0.457,PEMV+BLRV,,,
+Red Clover,3,alfalfa,5,BLRV,,6,5,23.6,0.12,0.133,PEMV+BLRV,Negative,0,0
+Red Clover,3,alfalfa,5,PEMV,Negative,2,6,20.9,0.04,0.045,PEMV+BLRV,,,
+Red Clover,3,alfalfa,1,BLRV,,10,1,21,0.2,0.204,PEMV+BLRV,,,
+Red Clover,3,alfalfa,1,PEMV,Negative,6,4,16,0.12,0.13,PEMV+BLRV,Negative,0,0
+Red Clover,5,pea,1,SHAM,Sham,16,3,12.2,0.32,0.34,PEMV+BLRV,Negative,0,0
+Red Clover,5,pea,1,BLRV,,10,4,19.8,0.2,0.217,PEMV+BLRV,Negative,0,0
+Red Clover,5,pea,1,PEMV,Negative,11,3,14.6,0.22,0.234,PEMV+BLRV,Negative,0,0
+Red Clover,3,alfalfa,1,SHAM,Sham,3,2,12.2,0.06,0.063,PEMV+BLRV,Negative x2,0,0
+Red Clover,5,pea,2,PEMV,Negative,12,4,16.8,0.24,0.261,PEMV+BLRV,Negative,0,0

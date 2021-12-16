@@ -1,0 +1,341 @@
+﻿blank,month,Plant_sp,Virus,Genotype,Biotype,Rep,Counts,Dead_in_rep,Fresh Weight,Proportion_50,Proportion_living
+,Feb,Alfalfa,BLRV,5,Pea,1,2,2,13.9,0.04,0.042
+,Feb,Alfalfa,BLRV,2,Pea,1,2,6,10.3,0.04,0.045
+,Feb,Alfalfa,BLRV,5,Pea,2,2,0,12.7,0.04,0.04
+,Feb,Alfalfa,BLRV,2,Pea,2,4,1,14.1,0.08,0.082
+,Feb,Alfalfa,BLRV,5,Pea,3,1,0,14.5,0.02,0.02
+,Feb,Alfalfa,BLRV,2,Pea,3,5,8,12.8,0.1,0.119
+,Feb,Alfalfa,BLRV,2,Pea,4,1,0,11.1,0.02,0.02
+,Feb,Alfalfa,BLRV,5,Pea,4,4,3,13.9,0.08,0.085
+,Feb,Alfalfa,BLRV,2,Pea,5,4,5,13.2,0.08,0.089
+,Feb,Alfalfa,BLRV,5,Pea,5,3,6,18,0.06,0.068
+,Feb,Alfalfa,SHAM,2,Pea,1,3,7,12.9,0.06,0.07
+,Feb,Alfalfa,SHAM,5,Pea,1,2,3,15.5,0.04,0.043
+,Feb,Alfalfa,SHAM,2,Pea,2,0,2,16.5,0,0
+,Feb,Alfalfa,SHAM,5,Pea,2,0,1,16.1,0,0
+,Feb,Alfalfa,SHAM,2,Pea,3,1,7,26.5,0.02,0.023
+,Feb,Alfalfa,SHAM,5,Pea,3,0,1,20.6,0,0
+,Feb,Alfalfa,SHAM,5,Pea,4,0,4,17.3,0,0
+,Feb,Alfalfa,SHAM,2,Pea,4,0,4,18.5,0,0
+,Feb,Alfalfa,SHAM,5,Pea,5,4,5,18.1,0.08,0.089
+,Feb,Alfalfa,SHAM,2,Pea,5,0,6,26.6,0,0
+,March,Alfalfa,BLRV,3,Alfalfa,1,4,1,12.9,0.08,0.082
+,March,Alfalfa,SHAM,5,Alfalfa,1,2,3,18.6,0.04,0.043
+,March,Alfalfa,BLRV,5,Alfalfa,1,2,4,16.5,0.04,0.043
+,March,Alfalfa,SHAM,3,Alfalfa,1,8,2,18.1,0.16,0.167
+,March,Alfalfa,BLRV,3,Alfalfa,2,11,3,18.6,0.22,0.234
+,March,Alfalfa,SHAM,5,Pea,2,2,5,20.9,0.04,0.044
+,March,Alfalfa,SHAM,3,Alfalfa,2,9,1,16.3,0.18,0.184
+,March,Alfalfa,BLRV,5,Pea,2,2,6,19.8,0.04,0.045
+,March,Alfalfa,BLRV,3,Alfalfa,3,4,4,19.9,0.08,0.087
+,March,Alfalfa,SHAM,3,Alfalfa,3,1,3,25,0.02,0.021
+,March,Alfalfa,SHAM,3,Alfalfa,3,6,5,24.1,0.12,0.133
+,March,Alfalfa,BLRV,5,Pea,3,3,0,28.6,0.06,0.06
+,March,Alfalfa,BLRV,5,Pea,4,2,1,22.6,0.04,0.041
+,March,Alfalfa,SHAM,3,Alfalfa,4,6,3,20.2,0.12,0.128
+,March,Alfalfa,SHAM,5,Pea,4,3,2,23.5,0.06,0.063
+,March,Alfalfa,BLRV,3,Alfalfa,4,7,2,20.5,0.14,0.146
+,March,Alfalfa,BLRV,5,Pea,5,3,3,22,0.06,0.064
+,March,Alfalfa,SHAM,3,Alfalfa,5,13,5,25.1,0.26,0.289
+,March,Alfalfa,SHAM,5,Pea,5,0,4,25.3,0,0
+,March,Alfalfa,BLRV,3,Alfalfa,5,8,5,18.9,0.16,0.178
+,Feb,Fava,BLRV,5,Pea,1,13,2,20.5,0.26,0.271
+,Feb,Fava,BLRV,2,Pea,1,6,6,15.5,0.12,0.136
+,Feb,Fava,BLRV,5,Pea,2,7,0,25.5,0.14,0.14
+,Feb,Fava,BLRV,2,Pea,2,8,1,14.6,0.16,0.163
+,Feb,Fava,BLRV,5,Pea,3,10,0,33.1,0.2,0.2
+,Feb,Fava,BLRV,2,Pea,3,7,8,28.6,0.14,0.167
+,Feb,Fava,BLRV,2,Pea,4,12,0,49.9,0.24,0.24
+,Feb,Fava,BLRV,5,Pea,4,8,3,34.3,0.16,0.17
+,Feb,Fava,BLRV,2,Pea,5,10,5,39.6,0.2,0.222
+,Feb,Fava,BLRV,5,Pea,5,6,6,30.5,0.12,0.136
+,Feb,Fava,PEMV,2,Pea,1,10,5,30,0.2,0.222
+,Feb,Fava,PEMV,5,Pea,1,15,1,17.6,0.3,0.306
+,Feb,Fava,PEMV,5,Pea,2,9,3,24.6,0.18,0.191
+,Feb,Fava,PEMV,2,Pea,2,8,3,39.9,0.16,0.17
+,Feb,Fava,PEMV,5,Pea,3,5,1,30.1,0.1,0.102
+,Feb,Fava,PEMV,2,Pea,3,10,3,37.5,0.2,0.213
+,Feb,Fava,PEMV,5,Pea,4,8,0,35.3,0.16,0.16
+,Feb,Fava,PEMV,2,Pea,4,10,4,32.6,0.2,0.217
+,Feb,Fava,PEMV,5,Pea,5,11,3,35.1,0.22,0.234
+,Feb,Fava,PEMV,2,Pea,5,6,6,45,0.12,0.136
+,Feb,Fava,SHAM,2,Pea,1,14,7,17.9,0.28,0.326
+,Feb,Fava,SHAM,5,Pea,1,8,3,29,0.16,0.17
+,Feb,Fava,SHAM,2,Pea,2,8,2,28.3,0.16,0.167
+,Feb,Fava,SHAM,5,Pea,2,14,1,38.9,0.28,0.286
+,Feb,Fava,SHAM,2,Pea,3,8,7,39.5,0.16,0.186
+,Feb,Fava,SHAM,5,Pea,3,12,1,37.6,0.24,0.245
+,Feb,Fava,SHAM,5,Pea,4,10,4,41.7,0.2,0.217
+,Feb,Fava,SHAM,2,Pea,4,12,4,37.6,0.24,0.261
+,Feb,Fava,SHAM,5,Pea,5,10,5,21.6,0.2,0.222
+,Feb,Fava,SHAM,2,Pea,5,13,6,48.6,0.26,0.295
+,March,Fava,BLRV,3,Alfalfa,1,15,1,22.5,0.3,0.306
+,March,Fava,PEMV,3,Alfalfa,1,15,4,25.7,0.3,0.326
+,March,Fava,SHAM,5,Alfalfa,1,7,3,24.4,0.14,0.149
+,March,Fava,BLRV,5,Alfalfa,1,7,4,24.4,0.14,0.152
+,March,Fava,PEMV,5,Alfalfa,1,16,3,20.6,0.32,0.34
+,March,Fava,SHAM,3,Alfalfa,1,12,2,20.5,0.24,0.25
+,March,Fava,PEMV,5,Pea,2,10,4,19.9,0.2,0.217
+,March,Fava,BLRV,3,Alfalfa,2,10,3,34,0.2,0.213
+,March,Fava,SHAM,5,Pea,2,5,5,18.9,0.1,0.111
+,March,Fava,SHAM,3,Alfalfa,2,12,1,23.1,0.24,0.245
+,March,Fava,PEMV,3,Alfalfa,2,4,5,22.3,0.08,0.089
+,March,Fava,BLRV,5,Pea,2,5,6,29.1,0.1,0.114
+,March,Fava,PEMV,3,Alfalfa,3,9,0,30.3,0.18,0.18
+,March,Fava,SHAM,3,Alfalfa,3,8,3,25,0.16,0.17
+,March,Fava,PEMV,3,Alfalfa,3,28,0,33.6,0.56,0.56
+,March,Fava,SHAM,3,Alfalfa,3,8,5,22,0.16,0.178
+,March,Fava,BLRV,5,Pea,3,8,0,33,0.16,0.16
+,March,Fava,PEMV,3,Alfalfa,4,9,4,34.5,0.18,0.196
+,March,Fava,BLRV,5,Pea,4,10,1,35.5,0.2,0.204
+,March,Fava,SHAM,3,Alfalfa,4,15,3,29.3,0.3,0.319
+,March,Fava,PEMV,5,Pea,4,6,3,30.2,0.12,0.128
+,March,Fava,SHAM,5,Pea,4,10,2,27.8,0.2,0.208
+,March,Fava,BLRV,3,Alfalfa,4,5,2,17.5,0.1,0.104
+,March,Fava,BLRV,3,Alfalfa,4,15,2,32.4,0.3,0.313
+,March,Fava,BLRV,5,Pea,5,14,3,32,0.28,0.298
+,March,Fava,PEMV,5,Pea,5,8,4,26.9,0.16,0.174
+,March,Fava,SHAM,3,Alfalfa,5,7,5,18.1,0.14,0.156
+,March,Fava,SHAM,5,Pea,5,8,4,17.6,0.16,0.174
+,March,Fava,BLRV,3,Alfalfa,5,7,5,29.6,0.14,0.156
+,March,Fava,PEMV,3,Alfalfa,5,9,6,24.4,0.18,0.205
+,Feb,Lentil,BLRV,5,Pea,1,7,2,5,0.14,0.146
+,Feb,Lentil,BLRV,2,Pea,1,7,6,3.2,0.14,0.159
+,Feb,Lentil,BLRV,5,Pea,2,10,0,9,0.2,0.2
+,Feb,Lentil,BLRV,2,Pea,2,10,1,11.9,0.2,0.204
+,Feb,Lentil,BLRV,5,Pea,3,12,0,10.2,0.24,0.24
+,Feb,Lentil,BLRV,2,Pea,3,7,8,13.3,0.14,0.167
+,Feb,Lentil,BLRV,2,Pea,4,6,0,8.1,0.12,0.12
+,Feb,Lentil,BLRV,5,Pea,4,7,3,12.6,0.14,0.149
+,Feb,Lentil,BLRV,2,Pea,5,5,5,11.6,0.1,0.111
+,Feb,Lentil,BLRV,5,Pea,5,5,6,14,0.1,0.114
+,Feb,Lentil,PEMV,2,Pea,1,3,5,4.7,0.06,0.067
+,Feb,Lentil,PEMV,5,Pea,1,7,1,2.5,0.14,0.143
+,Feb,Lentil,PEMV,5,Pea,2,4,3,10.9,0.08,0.085
+,Feb,Lentil,PEMV,2,Pea,2,12,3,8.6,0.24,0.255
+,Feb,Lentil,PEMV,5,Pea,3,15,1,9.4,0.3,0.306
+,Feb,Lentil,PEMV,2,Pea,3,5,3,11.3,0.1,0.106
+,Feb,Lentil,PEMV,5,Pea,4,7,0,9.6,0.14,0.14
+,Feb,Lentil,PEMV,2,Pea,4,5,4,7.9,0.1,0.109
+,Feb,Lentil,PEMV,5,Pea,5,2,3,8.8,0.04,0.043
+,Feb,Lentil,PEMV,2,Pea,5,20,6,8.6,0.4,0.455
+,Feb,Lentil,SHAM,2,Pea,1,10,7,4.9,0.2,0.233
+,Feb,Lentil,SHAM,5,Pea,1,8,3,4.7,0.16,0.17
+,Feb,Lentil,SHAM,2,Pea,2,15,2,8.3,0.3,0.313
+,Feb,Lentil,SHAM,5,Pea,2,3,1,6.8,0.06,0.061
+,Feb,Lentil,SHAM,2,Pea,3,7,7,18.8,0.14,0.163
+,Feb,Lentil,SHAM,5,Pea,3,9,1,13.7,0.18,0.184
+,Feb,Lentil,SHAM,5,Pea,4,6,4,11.9,0.12,0.13
+,Feb,Lentil,SHAM,2,Pea,4,12,4,12.4,0.24,0.261
+,Feb,Lentil,SHAM,5,Pea,5,5,5,12.3,0.1,0.111
+,Feb,Lentil,SHAM,2,Pea,5,5,6,14.7,0.1,0.114
+,March,Lentil,BLRV,3,Alfalfa,1,9,1,11.9,0.18,0.184
+,March,Lentil,PEMV,3,Alfalfa,1,4,4,8.5,0.08,0.087
+,March,Lentil,PEMV,3,Alfalfa,1,6,4,8.2,0.12,0.13
+,March,Lentil,SHAM,5,Alfalfa,1,7,3,9.5,0.14,0.149
+,March,Lentil,BLRV,5,Alfalfa,1,10,4,11.2,0.2,0.217
+,March,Lentil,PEMV,5,Alfalfa,1,11,3,9.5,0.22,0.234
+,March,Lentil,SHAM,3,Alfalfa,1,6,2,12.1,0.12,0.125
+,March,Lentil,PEMV,5,Pea,2,8,4,10.3,0.16,0.174
+,March,Lentil,BLRV,3,Alfalfa,2,7,3,13.8,0.14,0.149
+,March,Lentil,SHAM,5,Pea,2,4,5,11.2,0.08,0.089
+,March,Lentil,SHAM,3,Alfalfa,2,6,1,11.1,0.12,0.122
+,March,Lentil,PEMV,3,Alfalfa,2,9,5,11.1,0.18,0.2
+,March,Lentil,BLRV,5,Pea,2,4,6,15.6,0.08,0.091
+,March,Lentil,PEMV,3,Alfalfa,3,6,0,14.9,0.12,0.12
+,March,Lentil,BLRV,3,Alfalfa,3,9,4,18,0.18,0.196
+,March,Lentil,SHAM,3,Alfalfa,3,10,3,13.6,0.2,0.213
+,March,Lentil,PEMV,3,Alfalfa,3,4,0,17.3,0.08,0.08
+,March,Lentil,SHAM,3,Alfalfa,3,8,5,11.7,0.16,0.178
+,March,Lentil,BLRV,5,Pea,3,10,0,16.1,0.2,0.2
+,March,Lentil,PEMV,3,Alfalfa,4,7,4,16.8,0.14,0.152
+,March,Lentil,BLRV,5,Pea,4,5,1,18.1,0.1,0.102
+,March,Lentil,SHAM,3,Alfalfa,4,7,3,16.9,0.14,0.149
+,March,Lentil,PEMV,5,Pea,4,6,3,16.9,0.12,0.128
+,March,Lentil,SHAM,5,Pea,4,6,2,14.3,0.12,0.125
+,March,Lentil,BLRV,3,Alfalfa,4,14,2,20.4,0.28,0.292
+,March,Lentil,BLRV,5,Pea,5,5,3,19.1,0.1,0.106
+,March,Lentil,PEMV,5,Pea,5,10,4,15,0.2,0.217
+,March,Lentil,SHAM,3,Alfalfa,5,7,5,19.5,0.14,0.156
+,March,Lentil,SHAM,5,Pea,5,4,4,13.8,0.08,0.087
+,March,Lentil,BLRV,3,Alfalfa,5,8,5,17.2,0.16,0.178
+,March,Lentil,PEMV,3,Alfalfa,5,8,6,16.5,0.16,0.182
+,Feb,Pea,BLRV,5,Pea,1,7,2,8,0.14,0.146
+,Feb,Pea,BLRV,2,Pea,1,13,6,7.9,0.26,0.295
+,Feb,Pea,BLRV,5,Pea,2,4,0,15.2,0.08,0.08
+,Feb,Pea,BLRV,2,Pea,2,9,1,15.8,0.18,0.184
+,Feb,Pea,BLRV,5,Pea,3,11,0,14.3,0.22,0.22
+,Feb,Pea,BLRV,2,Pea,3,8,8,13.5,0.16,0.19
+,Feb,Pea,BLRV,2,Pea,4,11,0,13.3,0.22,0.22
+,Feb,Pea,BLRV,5,Pea,4,6,3,17.4,0.12,0.128
+,Feb,Pea,BLRV,2,Pea,5,7,5,19.3,0.14,0.156
+,Feb,Pea,BLRV,5,Pea,5,5,6,14.1,0.1,0.114
+,Feb,Pea,PEMV,2,Pea,1,9,5,3.9,0.18,0.2
+,Feb,Pea,PEMV,5,Pea,1,5,1,4.8,0.1,0.102
+,Feb,Pea,PEMV,5,Pea,2,3,3,10.8,0.06,0.064
+,Feb,Pea,PEMV,2,Pea,2,10,3,14.6,0.2,0.213
+,Feb,Pea,PEMV,5,Pea,3,7,1,17.5,0.14,0.143
+,Feb,Pea,PEMV,2,Pea,3,16,3,15.5,0.32,0.34
+,Feb,Pea,PEMV,5,Pea,4,14,0,13.5,0.28,0.28
+,Feb,Pea,PEMV,2,Pea,4,10,4,11.4,0.2,0.217
+,Feb,Pea,PEMV,5,Pea,5,9,3,12.8,0.18,0.191
+,Feb,Pea,PEMV,2,Pea,5,8,6,13.9,0.16,0.182
+,Feb,Pea,SHAM,2,Pea,1,6,7,6.5,0.12,0.14
+,Feb,Pea,SHAM,5,Pea,1,6,3,6.8,0.12,0.128
+,Feb,Pea,SHAM,2,Pea,2,7,2,13.5,0.14,0.146
+,Feb,Pea,SHAM,5,Pea,2,2,1,10.8,0.04,0.041
+,Feb,Pea,SHAM,2,Pea,3,13,7,18.2,0.26,0.302
+,Feb,Pea,SHAM,5,Pea,3,7,1,17.9,0.14,0.143
+,Feb,Pea,SHAM,5,Pea,4,5,4,18.2,0.1,0.109
+,Feb,Pea,SHAM,2,Pea,4,8,4,18.4,0.16,0.174
+,Feb,Pea,SHAM,5,Pea,5,3,5,18.6,0.06,0.067
+,Feb,Pea,SHAM,2,Pea,5,10,6,17.9,0.2,0.227
+,March,Pea,BLRV,3,Alfalfa,1,8,1,9.8,0.16,0.163
+,March,Pea,SHAM,5,Alfalfa,1,6,3,10.2,0.12,0.128
+,March,Pea,BLRV,5,Alfalfa,1,6,4,12.5,0.12,0.13
+,March,Pea,PEMV,5,Alfalfa,1,3,3,9.5,0.06,0.064
+,March,Pea,SHAM,3,Alfalfa,1,10,2,11,0.2,0.208
+,March,Pea,PEMV,5,Pea,2,7,4,9.4,0.14,0.152
+,March,Pea,BLRV,3,Alfalfa,2,5,3,13,0.1,0.106
+,March,Pea,SHAM,5,Pea,2,4,5,11,0.08,0.089
+,March,Pea,SHAM,3,Alfalfa,2,4,1,10.5,0.08,0.082
+,March,Pea,PEMV,3,Alfalfa,2,14,5,9.1,0.28,0.311
+,March,Pea,BLRV,5,Pea,2,9,6,12.6,0.18,0.205
+,March,Pea,PEMV,3,Alfalfa,3,12,0,13.6,0.24,0.24
+,March,Pea,BLRV,3,Alfalfa,3,8,4,36.7,0.16,0.174
+,March,Pea,BLRV,3,Alfalfa,3,8,4,13.5,0.16,0.174
+,March,Pea,SHAM,3,Alfalfa,3,9,3,17.9,0.18,0.191
+,March,Pea,PEMV,3,Alfalfa,3,6,0,18.7,0.12,0.12
+,March,Pea,SHAM,3,Alfalfa,3,8,5,16.6,0.16,0.178
+,March,Pea,BLRV,5,Pea,3,4,0,19.6,0.08,0.08
+,March,Pea,PEMV,3,Alfalfa,4,9,4,12.9,0.18,0.196
+,March,Pea,BLRV,5,Pea,4,7,1,18.2,0.14,0.143
+,March,Pea,SHAM,3,Alfalfa,4,4,3,15.8,0.08,0.085
+,March,Pea,PEMV,5,Pea,4,5,3,18.4,0.1,0.106
+,March,Pea,SHAM,5,Pea,4,5,2,14.6,0.1,0.104
+,March,Pea,BLRV,3,Alfalfa,4,3,2,17.6,0.06,0.063
+,March,Pea,BLRV,5,Pea,5,6,3,15.5,0.12,0.128
+,March,Pea,PEMV,5,Pea,5,6,4,17.6,0.12,0.13
+,March,Pea,SHAM,3,Alfalfa,5,4,5,22.4,0.08,0.089
+,March,Pea,SHAM,5,Pea,5,4,4,15.2,0.08,0.087
+,March,Pea,BLRV,3,Alfalfa,5,6,5,19.3,0.12,0.133
+,March,Pea,PEMV,3,Alfalfa,5,11,6,11,0.22,0.25
+,Feb,Red Clover,BLRV,5,Pea,1,12,2,10.9,0.24,0.25
+,Feb,Red Clover,BLRV,2,Pea,1,2,6,10.6,0.04,0.045
+,Feb,Red Clover,BLRV,5,Pea,2,16,0,18.6,0.32,0.32
+,Feb,Red Clover,BLRV,2,Pea,2,6,1,17.6,0.12,0.122
+,Feb,Red Clover,BLRV,5,Pea,3,10,0,19.9,0.2,0.2
+,Feb,Red Clover,BLRV,2,Pea,3,5,8,20.9,0.1,0.119
+,Feb,Red Clover,BLRV,2,Pea,4,2,0,21.1,0.04,0.04
+,Feb,Red Clover,BLRV,5,Pea,4,12,3,20.6,0.24,0.255
+,Feb,Red Clover,BLRV,2,Pea,5,1,5,20.6,0.02,0.022
+,Feb,Red Clover,BLRV,5,Pea,5,10,6,25,0.2,0.227
+,Feb,Red Clover,PEMV,2,Pea,1,3,5,7.9,0.06,0.067
+,Feb,Red Clover,PEMV,5,Pea,1,17,1,9.1,0.34,0.347
+,Feb,Red Clover,PEMV,5,Pea,2,13,3,16.3,0.26,0.277
+,Feb,Red Clover,PEMV,2,Pea,2,4,3,16.8,0.08,0.085
+,Feb,Red Clover,PEMV,5,Pea,3,6,1,20,0.12,0.122
+,Feb,Red Clover,PEMV,2,Pea,3,3,3,17.2,0.06,0.064
+,Feb,Red Clover,PEMV,5,Pea,4,7,0,12.9,0.14,0.14
+,Feb,Red Clover,PEMV,2,Pea,4,4,4,13.3,0.08,0.087
+,Feb,Red Clover,PEMV,5,Pea,5,14,3,18.9,0.28,0.298
+,Feb,Red Clover,PEMV,2,Pea,5,4,6,15.9,0.08,0.091
+,Feb,Red Clover,SHAM,2,Pea,1,2,7,6,0.04,0.047
+,Feb,Red Clover,SHAM,5,Pea,1,11,3,4.8,0.22,0.234
+,Feb,Red Clover,SHAM,2,Pea,2,3,2,9.7,0.06,0.063
+,Feb,Red Clover,SHAM,5,Pea,2,15,1,10.2,0.3,0.306
+,Feb,Red Clover,SHAM,2,Pea,3,4,7,11.2,0.08,0.093
+,Feb,Red Clover,SHAM,5,Pea,3,9,1,12.7,0.18,0.184
+,Feb,Red Clover,SHAM,5,Pea,4,16,4,10.3,0.32,0.348
+,Feb,Red Clover,SHAM,2,Pea,4,3,4,9.6,0.06,0.065
+,Feb,Red Clover,SHAM,5,Pea,5,10,5,10.1,0.2,0.222
+,Feb,Red Clover,SHAM,2,Pea,5,4,6,10.3,0.08,0.091
+,March,Red Clover,BLRV,3,Alfalfa,1,10,1,21,0.2,0.204
+,March,Red Clover,PEMV,3,Alfalfa,1,6,4,16,0.12,0.13
+,March,Red Clover,SHAM,5,Alfalfa,1,16,3,12.2,0.32,0.34
+,March,Red Clover,BLRV,5,Alfalfa,1,10,4,19.8,0.2,0.217
+,March,Red Clover,PEMV,5,Alfalfa,1,11,3,14.6,0.22,0.234
+,March,Red Clover,SHAM,3,Alfalfa,1,3,2,12.2,0.06,0.063
+,March,Red Clover,PEMV,5,Pea,2,12,4,16.8,0.24,0.261
+,March,Red Clover,BLRV,3,Alfalfa,2,6,3,17.8,0.12,0.128
+,March,Red Clover,SHAM,5,Pea,2,19,5,11.3,0.38,0.422
+,March,Red Clover,SHAM,3,Alfalfa,2,9,1,11.5,0.18,0.184
+,March,Red Clover,PEMV,3,Alfalfa,2,6,5,18.8,0.12,0.133
+,March,Red Clover,BLRV,5,Pea,2,9,6,20.6,0.18,0.205
+,March,Red Clover,PEMV,3,Alfalfa,3,14,0,24,0.28,0.28
+,March,Red Clover,BLRV,3,Alfalfa,3,4,4,24,0.08,0.087
+,March,Red Clover,SHAM,3,Alfalfa,3,9,3,13.3,0.18,0.191
+,March,Red Clover,PEMV,3,Alfalfa,3,2,0,24,0.04,0.04
+,March,Red Clover,SHAM,3,Alfalfa,3,5,5,14.6,0.1,0.111
+,March,Red Clover,BLRV,5,Pea,3,13,0,24.5,0.26,0.26
+,March,Red Clover,PEMV,3,Alfalfa,4,6,4,19.1,0.12,0.13
+,March,Red Clover,BLRV,5,Pea,4,13,1,22.9,0.26,0.265
+,March,Red Clover,SHAM,3,Alfalfa,4,5,3,10.9,0.1,0.106
+,March,Red Clover,PEMV,5,Pea,4,15,3,23.4,0.3,0.319
+,March,Red Clover,SHAM,5,Pea,4,15,2,13.1,0.3,0.313
+,March,Red Clover,BLRV,3,Alfalfa,4,2,2,23.6,0.04,0.042
+,March,Red Clover,BLRV,5,Pea,5,8,3,26.6,0.16,0.17
+,March,Red Clover,PEMV,5,Pea,5,15,4,23.4,0.3,0.326
+,March,Red Clover,SHAM,3,Alfalfa,5,1,5,14.3,0.02,0.022
+,March,Red Clover,SHAM,5,Pea,5,21,4,119.9,0.42,0.457
+,March,Red Clover,BLRV,3,Alfalfa,5,6,5,23.6,0.12,0.133
+,March,Red Clover,PEMV,3,Alfalfa,5,2,6,20.9,0.04,0.045
+,Feb,Hairy Vetch,BLRV,5,Pea,1,6,2,15.3,0.12,0.125
+,Feb,Hairy Vetch,BLRV,2,Pea,1,12,6,18.5,0.24,0.273
+,Feb,Hairy Vetch,BLRV,5,Pea,2,11,0,24.6,0.22,0.22
+,Feb,Hairy Vetch,BLRV,2,Pea,2,10,1,25.5,0.2,0.204
+,Feb,Hairy Vetch,BLRV,5,Pea,3,6,0,10.3,0.12,0.12
+,Feb,Hairy Vetch,BLRV,2,Pea,3,9,8,26.1,0.18,0.214
+,Feb,Hairy Vetch,BLRV,2,Pea,4,18,0,21.3,0.36,0.36
+,Feb,Hairy Vetch,BLRV,5,Pea,4,8,3,23.9,0.16,0.17
+,Feb,Hairy Vetch,BLRV,2,Pea,5,11,5,19.7,0.22,0.244
+,Feb,Hairy Vetch,BLRV,5,Pea,5,10,6,11.4,0.2,0.227
+,Feb,Hairy Vetch,PEMV,2,Pea,1,19,5,19.1,0.38,0.422
+,Feb,Hairy Vetch,PEMV,5,Pea,1,2,1,11.8,0.04,0.041
+,Feb,Hairy Vetch,PEMV,5,Pea,2,11,3,28,0.22,0.234
+,Feb,Hairy Vetch,PEMV,2,Pea,2,12,3,26.8,0.24,0.255
+,Feb,Hairy Vetch,PEMV,5,Pea,3,13,1,31.5,0.26,0.265
+,Feb,Hairy Vetch,PEMV,2,Pea,3,13,3,28.7,0.26,0.277
+,Feb,Hairy Vetch,PEMV,5,Pea,4,12,0,32.6,0.24,0.24
+,Feb,Hairy Vetch,PEMV,2,Pea,4,14,4,27.5,0.28,0.304
+,Feb,Hairy Vetch,PEMV,5,Pea,5,8,3,28.6,0.16,0.17
+,Feb,Hairy Vetch,PEMV,2,Pea,5,5,6,35.1,0.1,0.114
+,Feb,Hairy Vetch,SHAM,2,Pea,1,5,7,16.8,0.1,0.116
+,Feb,Hairy Vetch,SHAM,5,Pea,1,10,3,9.3,0.2,0.213
+,Feb,Hairy Vetch,SHAM,2,Pea,2,15,2,9.5,0.3,0.313
+,Feb,Hairy Vetch,SHAM,5,Pea,2,14,1,20.1,0.28,0.286
+,Feb,Hairy Vetch,SHAM,2,Pea,3,9,7,28.2,0.18,0.209
+,Feb,Hairy Vetch,SHAM,5,Pea,3,11,1,18.8,0.22,0.224
+,Feb,Hairy Vetch,SHAM,5,Pea,4,4,4,30.8,0.08,0.087
+,Feb,Hairy Vetch,SHAM,2,Pea,4,10,4,19.3,0.2,0.217
+,Feb,Hairy Vetch,SHAM,5,Pea,5,9,5,19.9,0.18,0.2
+,Feb,Hairy Vetch,SHAM,2,Pea,5,10,6,29.6,0.2,0.227
+,March,Hairy Vetch,BLRV,3,Alfalfa,1,2,1,8.8,0.04,0.041
+,March,Hairy Vetch,PEMV,3,Alfalfa,1,10,4,6.8,0.2,0.217
+,March,Hairy Vetch,SHAM,5,Alfalfa,1,3,3,10.1,0.06,0.064
+,March,Hairy Vetch,BLRV,5,Alfalfa,1,7,4,9.5,0.14,0.152
+,March,Hairy Vetch,PEMV,5,Alfalfa,1,3,3,9.1,0.06,0.064
+,March,Hairy Vetch,SHAM,3,Alfalfa,1,6,2,9,0.12,0.125
+,March,Hairy Vetch,PEMV,5,Pea,2,6,4,8,0.12,0.13
+,March,Hairy Vetch,BLRV,3,Alfalfa,2,4,3,11,0.08,0.085
+,March,Hairy Vetch,SHAM,5,Pea,2,7,5,12.6,0.14,0.156
+,March,Hairy Vetch,SHAM,3,Alfalfa,2,7,1,13.5,0.14,0.143
+,March,Hairy Vetch,PEMV,3,Alfalfa,2,8,5,13.3,0.16,0.178
+,March,Hairy Vetch,BLRV,5,Pea,2,10,6,12.4,0.2,0.227
+,March,Hairy Vetch,PEMV,3,Alfalfa,3,7,0,9.5,0.14,0.14
+,March,Hairy Vetch,BLRV,3,Alfalfa,3,10,4,20.9,0.2,0.217
+,March,Hairy Vetch,SHAM,3,Alfalfa,3,9,3,19.1,0.18,0.191
+,March,Hairy Vetch,PEMV,3,Alfalfa,3,8,0,21.4,0.16,0.16
+,March,Hairy Vetch,SHAM,3,Alfalfa,3,6,5,14.2,0.12,0.133
+,March,Hairy Vetch,BLRV,5,Pea,3,11,0,18.9,0.22,0.22
+,March,Hairy Vetch,PEMV,3,Alfalfa,4,8,4,25.6,0.16,0.174
+,March,Hairy Vetch,BLRV,5,Pea,4,10,1,20,0.2,0.204
+,March,Hairy Vetch,SHAM,3,Alfalfa,4,4,3,12.9,0.08,0.085
+,March,Hairy Vetch,PEMV,5,Pea,4,11,3,16.6,0.22,0.234
+,March,Hairy Vetch,SHAM,5,Pea,4,7,2,13.4,0.14,0.146
+,March,Hairy Vetch,BLRV,5,Pea,5,9,3,17.9,0.18,0.191
+,March,Hairy Vetch,PEMV,5,Pea,5,4,4,19.9,0.08,0.087
+,March,Hairy Vetch,SHAM,3,Alfalfa,5,10,5,12.8,0.2,0.222
+,March,Hairy Vetch,SHAM,5,Pea,5,6,4,15.3,0.12,0.13
+,March,Hairy Vetch,BLRV,3,Alfalfa,5,8,5,18.2,0.16,0.178
+,March,Hairy Vetch,PEMV,3,Alfalfa,5,6,6,26.2,0.12,0.136

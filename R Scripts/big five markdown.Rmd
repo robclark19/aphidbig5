@@ -1,0 +1,487 @@
+---
+title: '"Big 5" aphid genotype experiment'
+author: "Rob Clark"
+date: "9/17/2019"
+output:
+  word_document: default
+  pdf_document: default
+  html_document: default
+---
+
+
+```{r setup, include=FALSE}
+library("lme4")
+library("car")
+library("multcomp")
+library("ggplot2")
+library("emmeans")
+library("piecewiseSEM")
+library("MASS")
+library("dplyr")
+library("effects")
+library("sjPlot")
+```
+
+## Data
+Due to very low infection rate (effectively zero) BLRV can be removed from this study below if necessary
+
+```{r performance data}
+bf <- read.csv("big five.csv", header = TRUE)
+str(bf)
+
+bf$Genotype <- as.factor(bf$Genotype)
+
+# BLRV is now included, but can be supressed here with this line
+# bf <- subset(bf, virus != "BLRV")
+```
+
+# Remaining code and plots
+## Figure 1
+
+```{r Fig 1, echo=FALSE}
+
+# Fig 1 ####
+# Fig 1 should be aphid performance for sham and PEMV (BLRV excluded)
+
+both.bio.mod <- glm.nb(Counts ~ Biotype*Plant*virus + Run, data=bf)
+summary(both.bio.mod)
+Anova(both.bio.mod)
+
+#planned contrast with things grouped by virus, plant, then biotype
+both.bio.cld <- cld(emmeans(both.bio.mod, ~ Biotype|Plant|virus, adjust="none", type="response"), sort=FALSE, Letters=c("abc"))
+both.bio.cld
+
+#compare to order from both.bio.cld (performance assay)
+bbc.dat <- as.data.frame(both.bio.cld)
+
+# edit emmean object so it makes ggplot happy
+both.bio.cld$.group=gsub(" ", "", both.bio.cld$.group)
+both.bio.cld$emmean <- both.bio.cld$response
+
+#make ggplot figure based on post hoc tests above
+
+both.bio.fig <- ggplot(both.bio.cld, aes(x=Plant, y=emmean, fill=Biotype)) +
+  geom_bar(stat="identity", width=0.8, position="dodge") +
+  geom_errorbar(aes(ymin=emmean-(SE), ymax=emmean+(SE)), position=position_dodge(0.8), width=0.1) +
+  theme_bw(base_size = 12) + 
+  theme(panel.border = element_blank(), panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), axis.line = element_line(colour = "black")) +
+  labs(y="Aphid count at one week", x="Plant Species") + 
+  scale_fill_grey() +
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5)) +
+  geom_text(aes(x = Plant, y = (emmean+SE+75), label = .group), position=position_dodge(width=0.8)) +
+  facet_wrap( ~ virus, nrow=3)
+both.bio.fig
+
+
+```
+
+
+## Figure 2
+
+```{r, echo=FALSE}
+# Fig 2 ####
+# Fig 2 should be differences in preference among biotypes tested
+
+# match analysis to the one in Fig 1
+# new pref analysis #####
+settle.dat <- read.csv("settle mod.csv", header= TRUE)
+
+#settle.dat <- subset(settle.dat, Virus != "BLRV")
+
+# attempt to remove alfalfa since it cannot be PEMV+
+# settle.dat <- subset(settle.dat, Plant_sp != "AL")
+
+# attempted to remove feb time block but that did not help
+#settle.dat <- subset(settle.dat, month != "Feb")
+
+new.count.mod <- glm(Counts ~ Biotype*Plant_sp*Virus, data=settle.dat)
+Anova(new.count.mod)
+
+count.lsm <- cld(emmeans(new.count.mod, ~ Biotype|Plant_sp|Virus), sort=FALSE, adjust="none", type="response")
+count.lsm
+
+# make a data frame that has the lsm/cld for preference and performance (for fig 3 later)
+pxp <- as.data.frame(count.lsm)
+
+#edit groupings so they line up better in ggplot
+count.lsm$.group=gsub(" ", "", count.lsm$.group)
+
+#make figure for counts of aphids that move to each host plant
+count.lsm.fig <- ggplot(count.lsm, aes(x=Plant_sp, y=emmean, fill=Biotype)) +
+  geom_bar(stat="identity", width=0.8, position="dodge") +
+  geom_errorbar(aes(ymin=emmean-(SE), ymax=emmean+(SE)), position=position_dodge(0.8), width=0.1) +
+  theme_bw(base_size = 12) + 
+  theme(panel.border = element_blank(), panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), axis.line = element_line(colour = "black")) +
+  labs(y="Number of aphids that moved towards host plant", x="Plant Species") + 
+  scale_fill_grey() +
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5)) +
+  geom_text(aes(x = Plant_sp, y = (emmean+SE+2), label = .group), position=position_dodge(width=0.8)) +
+  facet_wrap( ~ Virus, nrow=3)
+count.lsm.fig
+
+```
+
+## Figure 3
+
+```{r Figure 3}
+
+# Fig 3 ####
+# Fig 3 should be preference by performance assay with BLRV excluded. perhaps two models can be run, comparing 23, and 35
+
+# make a data frame that has the lsm/cld for preference and performance
+pxp <- as.data.frame(count.lsm)
+
+#compare to order from both.bio.cld (performance assay)
+bbc.dat <- as.data.frame(both.bio.cld)
+
+pxp$performance <- bbc.dat$response
+pxp$preference <- count.lsm$emmean
+
+# glm for preference by performance
+
+pxp.glm <- glm(preference ~ performance*Virus, data=pxp)
+Anova(pxp.glm)
+
+plot_model(pxp.glm, type="int", ci.lvl = 0.90)
+```
+
+## Figure s1-3
+
+```{r supplemental}
+# Fig S1 ####
+# Fig S1 should show infection rate of PEMV
+choice.pcr <- read.csv("test choice pcr.csv", header = TRUE)
+str(choice.pcr)
+
+
+#choice glm to see if treatment increases likelihood of infection
+choice.pcr.PEMV <- glm(PEMV ~ Virus, family=binomial, data=choice.pcr)
+#not promising at all
+Anova(choice.pcr.PEMV)
+summary(choice.pcr.PEMV)
+
+choice.pemv.lsm <- cld(emmeans(choice.pcr.PEMV, ~ Virus), type="response")
+choice.pemv.lsm
+
+choice.pemv.fig <- ggplot(choice.pemv.lsm, aes(x=Virus, y=prob)) +
+  geom_bar(stat="identity", width=0.8, position="dodge") +
+  geom_errorbar(aes(ymin=prob-(SE), ymax=prob+(SE)), position=position_dodge(0.8), width=0.5) +
+  theme_bw(base_size = 12) + 
+  theme(panel.border = element_blank(), panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), axis.line = element_line(colour = "black")) +
+  labs(y="Probability of PEMV infection in choice assay", x="Virus") + 
+  scale_fill_grey() +
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5))
+#ylim(0,7.5) +
+#facet_wrap( ~ virus, nrow=3)
+choice.pemv.fig
+
+#can run, but one positive in a sham treatment does not really instill confidence
+choice.pcr.BLRV <- glm(BLRV ~ Virus, family=binomial, data=choice.pcr)
+Anova(choice.pcr.BLRV)
+summary(choice.pcr.BLRV)
+
+# test to see if positive, negative, or sham pemv alters behavior
+choice.pcr.2 <- subset(choice.pcr, Virus != "BLRV")
+
+test.count.mod <- glm(Aphid.counts ~ PEMV.test*Plant_sp, data=choice.pcr.2)
+Anova(test.count.mod)
+
+holy.lsm <- cld(emmeans(test.count.mod, ~ PEMV.test|Plant_sp), adjust="none")
+holy.lsm
+
+# test to see if preference thingy can work this way
+
+pref.mod.3 <- glm(Aphid.counts ~ PEMV.test*Plant_sp*Biotype, data=choice.pcr.2)
+Anova(pref.mod.3)
+
+# nah, it doent look like this will work. there isnt any positive hits for most combinations of biotype*plant species
+holy.lsm.3 <- cld(emmeans(pref.mod.3, ~ PEMV.test|Plant_sp|Biotype), adjust="none")
+holy.lsm.3
+
+
+
+
+
+# Fig S2 ####
+# Fig S2 should show that aphid abundance for infective aphids vs. positive PCR infection are more similar than either to controls
+
+repro.pcr <-read.csv("test reproduction pcr.csv", header=TRUE)
+str(repro.pcr)
+
+
+#pemv infection higher here
+repro.pcr.PEMV <- glm(PEMV ~ Virus, family=binomial, data=repro.pcr)
+Anova(repro.pcr.PEMV)
+summary(repro.pcr.PEMV)
+
+repro.pcr.lsm <- cld(emmeans(repro.pcr.PEMV, ~ Virus), type="response")
+
+
+repro.pemv.fig <- ggplot(repro.pcr.lsm, aes(x=Virus, y=prob)) +
+  geom_bar(stat="identity", width=0.8, position="dodge") +
+  geom_errorbar(aes(ymin=prob-(SE), ymax=prob+(SE)), position=position_dodge(0.8), width=0.5) +
+  theme_bw(base_size = 12) + 
+  theme(panel.border = element_blank(), panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), axis.line = element_line(colour = "black")) +
+  labs(y="Probability of PEMV infection in reproduction assay", x="Virus") + 
+  scale_fill_grey() +
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5))
+repro.pemv.fig
+
+# Fig S3
+
+# Fig S3 should show that aphid abundance for infective aphids vs. positive PCR infection are more similar than either to controls
+
+
+# requires cleaned data from Logan Dean made on sept 12
+
+bflc <- read.csv("big five Logan check.csv", header = TRUE)
+str(bflc)
+
+bf$Genotype <- as.factor(bf$Genotype)
+
+# make all blanks NA
+bflc[bflc==""] <- NA
+
+# exclude all but block 3 (because that has pcr tests)
+
+bflc.mod <- glm(Counts ~ PEMV.PCR, data=bflc)
+summary(bflc.mod)
+
+cld(emmeans(bflc.mod, ~ PEMV.PCR))
+
+# Run again excluded BLRV to solve some model problems and include host plant species
+
+bflc.2 <- subset(bflc, virus != "BLRV")
+
+
+bflc.mod.2 <- glm(Counts ~ PEMV.PCR*Plant, data=bflc.2)
+summary(bflc.mod.2)
+
+logan.lsm <- cld(emmeans(bflc.mod.2, ~ Plant|PEMV.PCR), adjust="none")
+
+logan.pcr <- ggplot(logan.lsm, aes(x=PEMV.PCR, y=emmean)) +
+  geom_bar(stat="identity", width=0.8, position="dodge") +
+  geom_errorbar(aes(ymin=emmean-(SE), ymax=emmean+(SE)), position=position_dodge(0.8), width=0.5) +
+  theme_bw(base_size = 12) + 
+  theme(panel.border = element_blank(), panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), axis.line = element_line(colour = "black")) +
+  labs(y="Number of aphids produced in reproduction assay", x="PCR outcome") + 
+  scale_fill_grey() +
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5)) +
+  facet_wrap(. ~ Plant)
+logan.pcr
+
+
+```
+
+# Extra plant focused figures 
+
+```{r Genotype by plant figures, echo=FALSE}
+
+# Vetch #########
+
+vetch.dat <-subset(bf, Plant == "Hairy Vetch")
+#vetch.dat
+
+vetch.mod <- glm.nb(Counts ~ Genotype*virus + Run, data=vetch.dat)
+#summary(vetch.mod)
+
+vetch.cld <- cld(emmeans(vetch.mod, ~ Genotype|virus, adjust="tukey", type="response"), sort=FALSE)
+#vetch.cld
+
+vetch.cld$emmean <- vetch.cld$response
+vetch.cld$.group <- as.numeric(vetch.cld$.group)
+
+Anova(vetch.mod)
+
+vetch.five.fig <- ggplot(vetch.cld, aes(x=Genotype, y=emmean, fill=virus)) +
+  geom_bar(stat="identity", width=0.8, position="dodge") +
+  geom_errorbar(aes(ymin=emmean-(SE), ymax=emmean+(SE)), position=position_dodge(0.8), width=0.1) +
+  theme_bw(base_size = 12) + 
+  theme(panel.border = element_blank(), panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), axis.line = element_line(colour = "black")) +
+  labs(y="Aphid Count at One Week On Hairy Vetch", x="Genotype") + 
+  scale_fill_grey() +
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5)) +
+  geom_text(aes(x = Genotype, y = (emmean+SE+100), label = .group)) +
+  facet_wrap( ~ virus, nrow=3)
+
+vetch.five.fig
+
+pea.dat <-subset(bf, Plant == "Pea")
+str(pea.dat)
+
+pea.mod <- glm.nb(Counts ~ Genotype*virus, data=pea.dat)
+summary(pea.mod)
+
+pea.cld <- cld(emmeans(pea.mod, ~ Genotype|virus, adjust="tukey", type="response"), sort=FALSE)
+# pea.cld
+#figure with just pea
+
+pea.cld$emmean <- pea.cld$response
+pea.cld$.group <- as.numeric(pea.cld$.group)
+# pea.cld
+
+Anova(pea.mod)
+  
+pea.five.fig <- ggplot(pea.cld, aes(x=Genotype, y=emmean, fill=virus)) +
+  geom_bar(stat="identity", width=0.8, position="dodge") +
+  geom_errorbar(aes(ymin=emmean-(SE), ymax=emmean+(SE)), position=position_dodge(0.8), width=0.1) +
+  theme_bw(base_size = 12) + 
+  theme(panel.border = element_blank(), panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), axis.line = element_line(colour = "black")) +
+  labs(y="Aphid Count at One Week On Pea", x="Genotype") + 
+  scale_fill_grey() +
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5)) +
+  geom_text(aes(x = Genotype, y = (emmean+SE+400), label = .group)) +
+  facet_wrap( ~ virus, nrow=3)
+
+pea.five.fig
+
+
+
+
+
+# alfalfa must be excluded if BLRV is excluded (cant do sham only interaction term-breaks model) ####
+# alfalfa ###
+Alfalfa.dat <-subset(bf, Plant == "Alfalfa")
+
+Alfalfa.mod <- glm.nb(Counts ~ Genotype + virus, data=Alfalfa.dat)
+#summary(Alfalfa.mod)
+
+alfalfa.cld <- cld(emmeans(Alfalfa.mod, ~ Genotype|virus, adjust="tukey", type="response"), sort=FALSE)
+#alfalfa.cld
+
+alfalfa.cld$emmean <- alfalfa.cld$response
+alfalfa.cld$.group <- as.numeric(alfalfa.cld$.group)
+
+Anova(Alfalfa.mod)
+
+alfalfa.five.fig <- ggplot(alfalfa.cld, aes(x=Genotype, y=emmean, fill=virus)) +
+  geom_bar(stat="identity", width=0.8, position="dodge") +
+  geom_errorbar(aes(ymin=emmean-(SE), ymax=emmean+(SE)), position=position_dodge(0.8), width=0.1) +
+  theme_bw(base_size = 12) + 
+  theme(panel.border = element_blank(), panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), axis.line = element_line(colour = "black")) +
+  labs(y="Aphid Count at One Week On Alfalfa", x="Genotype") + 
+  scale_fill_grey() +
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5)) +
+  geom_text(aes(x = Genotype, y = (emmean+SE+100), label = .group)) +
+  facet_wrap( ~ virus, nrow=3)
+
+alfalfa.five.fig
+
+# faba ######
+
+Faba.dat <-subset(bf, Plant == "Faba")
+
+
+Faba.mod <- glm.nb(Counts ~ Genotype*virus + Run, data=Faba.dat)
+summary(Faba.mod)
+Anova(Faba.mod)
+
+faba.cld <- cld(emmeans(Faba.mod, ~ Genotype|virus, adjust="tukey", type="response"), sort=FALSE)
+#faba.cld
+
+faba.cld$emmean <- faba.cld$response
+faba.cld$.group <- as.numeric(faba.cld$.group)
+
+faba.five.fig <- ggplot(faba.cld, aes(x=Genotype, y=emmean, fill=virus)) +
+  geom_bar(stat="identity", width=0.8, position="dodge") +
+  geom_errorbar(aes(ymin=emmean-(SE), ymax=emmean+(SE)), position=position_dodge(0.8), width=0.1) +
+  theme_bw(base_size = 12) + 
+  theme(panel.border = element_blank(), panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), axis.line = element_line(colour = "black")) +
+  labs(y="Aphid Count at One Week On Faba", x="Genotype") + 
+  scale_fill_grey() +
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5)) +
+  geom_text(aes(x = Genotype, y = (emmean+SE+100), label = .group)) +
+  facet_wrap( ~ virus, nrow=3)
+
+faba.five.fig
+
+
+# clover #####
+
+Red.Clover.dat <-subset(bf, Plant == "Red Clover")
+Red.Clover.dat
+
+Red.Clover.mod <- glm.nb(Counts ~ Genotype*virus + Run, data=Red.Clover.dat)
+#summary(Red.Clover.mod)
+
+red.clover.cld <- cld(emmeans(Red.Clover.mod, ~ Genotype|virus, adjust="tukey", type="response"), sort=FALSE)
+#red.clover.cld
+
+red.clover.cld$emmean <- red.clover.cld$response
+red.clover.cld$.group <- as.numeric(red.clover.cld$.group)
+
+Anova(Red.Clover.mod)
+
+red.clover.five.fig <- ggplot(red.clover.cld, aes(x=Genotype, y=emmean, fill=virus)) +
+  geom_bar(stat="identity", width=0.8, position="dodge") +
+  geom_errorbar(aes(ymin=emmean-(SE), ymax=emmean+(SE)), position=position_dodge(0.8), width=0.1) +
+  theme_bw(base_size = 12) + 
+  theme(panel.border = element_blank(), panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), axis.line = element_line(colour = "black")) +
+  labs(y="Aphid Count at One Week On Red clover", x="Genotype") + 
+  scale_fill_grey() +
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5)) +
+  geom_text(aes(x = Genotype, y = (emmean+SE+100), label = .group)) +
+  facet_wrap( ~ virus, nrow=3)
+
+red.clover.five.fig
+```
+
+
+#lentil figure 
+
+```{r lentil fig, echo=FALSE}
+# lentil ######
+
+Lentil.dat <-subset(bf, Plant == "Lentil")
+Lentil.mod <- glm.nb(Counts ~ Genotype*virus, data=Lentil.dat)
+#summary(Lentil.mod)
+
+lentil.cld <- cld(emmeans(Lentil.mod, ~ Genotype|virus, adjust="tukey", type="response"), sort=FALSE)
+
+#lentil.cld
+
+lentil.cld$emmean <- lentil.cld$response
+lentil.cld$.group <- as.numeric(lentil.cld$.group)
+
+Anova(Lentil.mod)
+
+lentil.five.fig <- ggplot(lentil.cld, aes(x=Genotype, y=emmean, fill=virus)) +
+  geom_bar(stat="identity", width=0.8, position="dodge") +
+  geom_errorbar(aes(ymin=emmean-(SE), ymax=emmean+(SE)), position=position_dodge(0.8), width=0.1) +
+  theme_bw(base_size = 12) + 
+  theme(panel.border = element_blank(), panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), axis.line = element_line(colour = "black")) +
+  labs(y="Aphid Count at One Week On Lentil", x="Genotype") + 
+  scale_fill_grey() +
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5)) +
+  geom_text(aes(x = Genotype, y = (emmean+SE+100), label = .group)) +
+  facet_wrap( ~ virus, nrow=3)
+
+lentil.five.fig
+
+
+
+
+```
+
