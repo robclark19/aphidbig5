@@ -43,7 +43,7 @@ bf$Genotype <- as.factor(bf$Genotype)
 # Fig 1 ####
 # Fig 1 should be aphid performance for sham and PEMV (BLRV excluded)
 
-both.bio.mod <- glm.nb(Counts ~ Biotype*Plant*virus + Run, data=bf)
+both.bio.mod <- glm.nb(Counts ~ Biotype * Plant * virus + Run, data = bf)
 summary(both.bio.mod)
 Anova(both.bio.mod)
 
