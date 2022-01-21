@@ -1,0 +1,120 @@
+---
+title: "Benthamiana1"
+author: "Sanford"
+date: "12/30/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+Bioassay data from **Benthamiana** project
+
+
+```{r, echo=FALSE}
+library(dplyr)
+library(emmeans)
+#GETTING IN THE DATA
+# bioassayd<-read.csv("benthamianabioassay.csv",stringsAsFactors=T)
+bioassaymod<-read.csv("benthamianabioassay_formodel.csv",stringsAsFactors=T)
+#bioassayd
+#bioassay9<-subset(bioassayd, TREAT!="_4077")
+bioassay9<- droplevels(bioassayd[!bioassayd$TREAT == "_4077",])
+str(bioassay9)
+#bioassay9
+ #summary(bioassayd)
+ summary(bioassay9)  
+ #ANOVAS COMPARING EMIGRATION AMONG TREATMENTS
+ anova.first <-aov(X20~TREAT, data=bioassay9)# X10, X20 ... DIFFERENT TIMES
+  summary(anova.first)
+  #TukeyHSD(anova.first,  ordered = FALSE, conf.level = 0.95)
+
+boxplot(X20~TREAT,data=bioassay9, las=2)
+ contrast1 = c(1,1,1,1,1,0,0,0,-5)
+ contrast2 = c(0,0,0,0,0,0,1,0,-1)
+ contrast3 = c(1,1,1,1,1,1,1,-7,1)
+ contrast4 = c(0,0,0,-1,0,0,0,0,1)
+ contrasts(bioassay9$TREAT) = cbind(contrast1,contrast2,contrast3,contrast4)
+#str(bioassay9)
+
+
+#contrasts(bioassay9$TREAT)
+ anova.second <-aov(X20~TREAT, data=bioassay9)
+ summary.lm(anova.second)
+ 
+ levels(bioassay9$TREAT)
+```
+
+## Treatments in order
+__4050, _3648, 3705, 3861, 3879, Agro, control, paper, PLRVwild
+
+## Contrast coefficients (revise based on script)
+ contrast1 = c(1,1,1,1,1,0,0,0,-5)\
+ contrast2 = c(0,0,0,0,0,0,1,0,-1)\
+ contrast3 = c(1,1,1,1,1,1,1,-7,1)\
+ contrast4 = c(0,0,0,-1,0,0,0,0,1)\
+```{r, include=TRUE}
+# EMIGRATION MODEL
+
+str(bioassaymod)
+#plot(bioassaymod$Time, bioassaymod$Emigrating, xlab = "seconds", ylab= "number emigrating/30")
+#title("Scatter Plot of Emigration by Time")
+
+attach (bioassaymod)
+#bioassaymod
+plot(Time,Remaining,  col = TREAT, pch = 1, xlab = "seconds", ylab= "number Remaining/30",xlim = c(0,75))
+title("Scatter Plot of Emigration by Time")
+legend("topright",c("__4050", "_3648", "3705", "3861", "3879", "Agro", "control", "paper", "PLRVwild"), col = 1:9, pch=1)
+
+emmod<-lm(log(Remaining+0.1)~Time)
+summary(emmod)
+
+  
+factor<-emmod$coefficients["Time"]
+factor
+coeff<-exp(emmod$coefficients["(Intercept)"])
+coeff
+factor<-round(factor,3)
+coeff<-round(coeff,3)
+fit_eq=paste("y=",coeff,"exp(",factor,"x)")
+text(25,29,fit_eq)
+curve(coeff*exp(factor*x),0,60,add=TRUE,col ="blue")
+
+```
+ 
+# second try
+```{r, include=TRUE}
+bioassaymod2<-data.frame(bioassaymod, group = TREAT)
+#bioassaymod2
+bioassaymodwt<-subset(bioassaymod2, group=="PLRVwild")
+#bioassaymodpaper
+
+attach (bioassaymodwt)
+#bioassaymod
+plot(Time,Remaining,  col = TREAT, pch = 1, xlab = "seconds", ylab= "number Remaining/30",xlim = c(0,75))
+title("Scatter Plot of Emigration by Time")
+legend("topright",c("__4050", "_3648", "3705", "3861", "3879", "Agro", "control", "paper", "PLRVwild"), col = 1:9, pch=1)
+
+emmod<-lm(log(Remaining+0.1)~Time)
+summary(emmod)
+
+factor<-emmod$coefficients["Time"]
+factor
+coeff<-exp(emmod$coefficients["(Intercept)"])
+coeff
+factor<-round(factor,3)
+coeff<-round(coeff,3)
+fit_eq=paste("y=",coeff,"exp(",factor,"x)")
+text(25,29,fit_eq)
+curve(coeff*exp(factor*x),0,60,add=TRUE,col ="blue")
+
+```
+ 
+# NOTES\
+MADE PROGRESS FITTING THE EMIGRATION DATA TO A MODEL AND PLOTTING. MODEL NEEDS WORK. NEED TO GET SOME ESTIMATE OF THE VARIANCE AROUND THE INTERCEPT AND SLOPE AND A WAY TO COMPARE THE LINES AMONG TREATMENTS. THE MODEL WORKS WELL FOR NUMBER OF SUBJECTS REMAINING, BUT WHEN I TRY TO WRITE FOR NUMBER EMIGRATING, SOMETHING DOESN'T WORK. MODEL BILL USED IS $N$ = $Rm$ × (1-e^–$\beta t$^), AND THAT IS NOT WHAT I'M USING, YET. I HOPE I CAN USE THIS BASIC CODE BUT MAYBE NOT.
+ 
+
+ 
