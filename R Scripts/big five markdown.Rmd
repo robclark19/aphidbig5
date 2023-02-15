@@ -7,7 +7,8 @@ output:
     fig_width: 5
     fig_height: 5
 mainfont: "Times New Roman"
-monofont: "Monaco"
+monofont: "Courier"
+
 ---
 
 
