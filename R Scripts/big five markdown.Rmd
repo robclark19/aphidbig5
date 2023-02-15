@@ -1,12 +1,15 @@
 ---
 title: '"Big 5" aphid genotype experiment'
 author: "Rob Clark"
-date: "9/17/2019"
+date: "February 2023"
 output:
-  word_document: default
-  pdf_document: default
-  html_document: default
+  pdf_document:
+    fig_width: 5
+    fig_height: 5
+mainfont: "Times New Roman"
+monofont: "Monaco"
 ---
+
 
 
 ```{r setup, include=FALSE}
@@ -20,13 +23,22 @@ library("MASS")
 library("dplyr")
 library("effects")
 library("sjPlot")
+
+#check wd in R to make sure this is all good
+getwd()
+file.exists("../Data/big five.csv")
+
+# use this for page based presentations
+# geometry: a5paper, margin=20mm, landscape
+
 ```
 
 ## Data
 Due to very low infection rate (effectively zero) BLRV can be removed from this study below if necessary
 
 ```{r performance data}
-bf <- read.csv("big five.csv", header = TRUE)
+
+bf <- read.csv("../Data/big five.csv")
 str(bf)
 
 bf$Genotype <- as.factor(bf$Genotype)
@@ -86,7 +98,7 @@ both.bio.fig
 
 # match analysis to the one in Fig 1
 # new pref analysis #####
-settle.dat <- read.csv("settle mod.csv", header= TRUE)
+settle.dat <- read.csv("../Data/settle mod.csv", header= TRUE)
 
 #settle.dat <- subset(settle.dat, Virus != "BLRV")
 
@@ -154,7 +166,7 @@ plot_model(pxp.glm, type="int", ci.lvl = 0.90)
 ```{r supplemental}
 # Fig S1 ####
 # Fig S1 should show infection rate of PEMV
-choice.pcr <- read.csv("test choice pcr.csv", header = TRUE)
+choice.pcr <- read.csv("../Data/test choice pcr.csv", header = TRUE)
 str(choice.pcr)
 
 
@@ -211,7 +223,7 @@ holy.lsm.3
 # Fig S2 ####
 # Fig S2 should show that aphid abundance for infective aphids vs. positive PCR infection are more similar than either to controls
 
-repro.pcr <-read.csv("test reproduction pcr.csv", header=TRUE)
+repro.pcr <-read.csv("../Data/test reproduction pcr.csv", header=TRUE)
 str(repro.pcr)
 
 
@@ -242,7 +254,7 @@ repro.pemv.fig
 
 # requires cleaned data from Logan Dean made on sept 12
 
-bflc <- read.csv("big five Logan check.csv", header = TRUE)
+bflc <- read.csv("../Data/big five Logan check.csv", header = TRUE)
 str(bflc)
 
 bf$Genotype <- as.factor(bf$Genotype)
