@@ -88,6 +88,10 @@ both.bio.fig <- ggplot(both.bio.cld, aes(x=Plant, y=emmean, fill=Biotype)) +
 both.bio.fig
 
 
+#### Alex ####
+#m1 = glmer.nb(Counts ~ Biotype * Plant * virus + Run + (1|ID..), nAGQ=0, data = bf)
+# Singular fit, evidence for no RE, goes for intercept & slopes
+
 ```
 
 
@@ -136,6 +140,10 @@ count.lsm.fig <- ggplot(count.lsm, aes(x=Plant_sp, y=emmean, fill=Biotype)) +
   facet_wrap( ~ Virus, nrow=3)
 count.lsm.fig
 
+#### Alex ####
+# Not the main dataset, seems to be supplementary
+
+
 ```
 
 ## Figure 3
@@ -160,6 +168,10 @@ pxp.glm <- glm(preference ~ performance*Virus, data=pxp)
 Anova(pxp.glm)
 
 plot_model(pxp.glm, type="int", ci.lvl = 0.90)
+
+
+
+
 ```
 
 ## Figure s1-3
