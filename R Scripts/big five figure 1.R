@@ -26,6 +26,9 @@ final.bio.mod <- glm.nb(Counts ~ Biotype + Plant + virus + Biotype:Plant + Plant
 
 Anova(final.bio.mod)
 
+# Save model for table s1
+saveRDS(final.bio.mod, "./Models/table1_mod.rds")
+
 
 # Means and SE for biotype by plant
 

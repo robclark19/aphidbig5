@@ -76,27 +76,19 @@ settle.dat <- read.csv("../Data/settle mod.csv", header= TRUE) %>%
     "Plant Species" = Plant_sp
   )
 
-# Supp tables
-choice.pcr <- read.csv("../Data/test choice pcr.csv", header = TRUE)
-repro.pcr <-read.csv("../Data/test reproduction pcr.csv", header=TRUE)
-bflc <- read.csv("../Data/big five Logan check.csv", header = TRUE) %>%
-  mutate(
-    Genotype <- as.factor(Genotype)
-  ) %>%
-  rename(
-    "PEMV (PCR)" = PEMV.PCR
-  )
+
 ```
 
 ```{r tab.cap="Supplementary Table 1."}
 
-both.bio.mod <- glm.nb(Counts ~ Biotype + Plant + Virus + Biotype:Plant + Plant:Virus, data = bf)
-format_anova(both.bio.mod)
+final.bio.mod <- readRDS("../Models/table1_mod.rds")
+format_anova(final.bio.mod)
 
 
 
 ```
 
+\newpage
 
 ```{r tab.cap="Supplementary Table 2."}
 
@@ -107,13 +99,17 @@ format_anova(new.count.mod)
 
 ```
 
+\newpage
 
 ```{r tab.cap="Supplementary Table 3."}
 
+new.count.mod <- glm.nb(Counts ~ Biotype + `Plant Species` + Biotype:`Plant Species`, data=settle.dat)
+format_anova(new.count.mod)
 
 
 ```
 
+\newpage
 
 ```{r tab.cap="Placeholder for Table S1."}
 
@@ -122,6 +118,7 @@ glm(PEMV ~ Virus, family=binomial, data=choice.pcr) %>%
 
 ```
 
+\newpage
 
 ```{r tab.cap="Placeholder for Table S2."}
 
@@ -130,6 +127,7 @@ glm(PEMV ~ Virus, family=binomial, data=repro.pcr) %>%
 
 ```
 
+\newpage
 
 ```{r tab.cap="Placeholder for Table S3."}
 bflc[bflc==""] <- NA
