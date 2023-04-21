@@ -78,6 +78,10 @@ plot1_a
 fig1b_cld <- cld(emmeans(final.bio.mod, ~ virus|Plant, type="response"), sort=FALSE, Letters=c("abc"))
 fig1b_cld
 
+# toggle for fig 1c
+# fig1b_cld <- cld(emmeans(final.bio.mod, ~ Plant|virus, type="response"), adjust="none", sort=FALSE, Letters=c("abc"))
+
+
 # edit emmean object so it makes ggplot happy
 fig1b_cld$.group=gsub(" ", "", fig1b_cld$.group)
 fig1b_cld$emmean <- fig1b_cld$response
@@ -108,4 +112,17 @@ plot_1b <- ggplot(Fig1b, aes(x=virus, y=mean)) +
   facet_wrap(~Plant)
 plot_1b
 
+# plot_1c <- ggplot(Fig1b, aes(x=Plant, y=mean)) +
+#   geom_bar(stat="identity", width=0.8, position="dodge") +
+#   geom_errorbar(aes(ymin=mean-(SEM), ymax=mean+(SEM)), position=position_dodge(0.8), width=0.1) +
+#   theme_bw(base_size = 12) + 
+#   theme(panel.grid.major = element_blank(),
+#         panel.grid.minor = element_blank(), axis.line = element_line(colour = "black")) +
+#   labs(y="Aphid count at one week", x="Host-plant species") + 
+#   scale_fill_grey() +
+#   theme(axis.line.x = element_line(color="black", size = 0.5),
+#         axis.line.y = element_line(color="black", size = 0.5)) +
+#   geom_text(aes(x = Plant, y = (mean+SEM+75), label = .group), position=position_dodge(width=0.8)) +
+#   facet_wrap(~virus)
+# plot_1c
 

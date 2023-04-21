@@ -32,9 +32,14 @@ pxp_dat_2 <- bf %>%
 
 pxp_dat_full <- left_join(pxp_dat, pxp_dat_2, by = c("Plant", "Biotype", "Virus"))
 
-pxp_glm <- glm(Total_Move ~ Total_Count * Virus, data=pxp_dat_full)
+pxp_only <- glm(Total_Move ~ Total_Count, data=pxp_dat_full)
+Anova(pxp_only)
 
+pxp_glm <- glm(Total_Move ~ Total_Count * Virus, data=pxp_dat_full)
 Anova(pxp_glm)
+
+# Save model for table s2
+saveRDS(pxp_glm, "./Models/table3_mod.rds")
 
 dat <- ggpredict(pxp_glm, terms = c("Total_Count", "Virus"))
 

@@ -26,6 +26,10 @@ final.count.mod <- glm.nb(Counts ~ Biotype + Plant_sp + Biotype:Plant_sp, data=s
 
 Anova(final.count.mod)
 
+# Save model for table s2
+saveRDS(final.count.mod, "./Models/table2_mod.rds")
+
+# get emmeans for posthoc tests
 count.lsm <- cld(emmeans(final.count.mod, ~ Biotype|Plant_sp), sort=FALSE, adjust="none", type="response")
 
 #edit groupings so they line up better in ggplot
@@ -34,9 +38,9 @@ count.lsm$.group=gsub(" ", "", count.lsm$.group)
 count.lsm$emmean <- count.lsm$response
 
 #make figure for counts of aphids that move to each host plant
-count.lsm.fig <- ggplot(count.lsm, aes(x=Plant_sp, y=emmean, fill=Biotype)) +
+count.lsm.fig <- ggplot(count.lsm, aes(x=Biotype, y=emmean)) +
   geom_bar(stat="identity", width=0.8, position="dodge") +
-  geom_errorbar(aes(ymin=emmean-(SE), ymax=emmean+(SE)), position=position_dodge(0.8), width=0.1) +
+  geom_errorbar(aes(ymin=mean-(SEM), ymax=mean+(SEM)), position=position_dodge(0.8), width=0.1) +
   theme_bw(base_size = 12) + 
   theme(panel.border = element_blank(), panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(), axis.line = element_line(colour = "black")) +
@@ -44,5 +48,6 @@ count.lsm.fig <- ggplot(count.lsm, aes(x=Plant_sp, y=emmean, fill=Biotype)) +
   scale_fill_grey() +
   theme(axis.line.x = element_line(color="black", size = 0.5),
         axis.line.y = element_line(color="black", size = 0.5)) +
-  geom_text(aes(x = Plant_sp, y = (emmean+SE+2), label = .group), position=position_dodge(width=0.8))
+  geom_text(aes(x = Biotype, y = (emmean+SE+2), label = .group), position=position_dodge(width=0.8)) +
+  facet_wrap(~Plant_sp)
 count.lsm.fig
