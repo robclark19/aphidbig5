@@ -115,7 +115,7 @@ plot_1b <- ggplot(Fig1b, aes(x=Virus, y=mean)) +
   facet_wrap(~Plant)
 plot_1b
 
-ggsave(filename = "./Figures/Fig 2.png", plot = plot1_b, device = "png",
+ggsave(filename = "./Figures/Fig 2.png", plot = plot_1b, device = "png",
        width = 6, height = 5, units = "in")
 
 # plot_1c <- ggplot(Fig1b, aes(x=Plant, y=mean)) +
