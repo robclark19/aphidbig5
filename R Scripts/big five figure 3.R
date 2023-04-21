@@ -11,8 +11,8 @@ library("tidyverse")
 library("ggeffects")
 
 # Preference by performance data loaded from prior scripts 
-str(settle.dat)
-str(bf)
+settle.dat <- read.csv("./Data/settle mod.csv", header= TRUE)
+bf <- read.csv("./Data/big five Logan check.csv")
 
 pxp_dat <- settle.dat %>%
   group_by(Plant_sp, Genotype, Biotype, Virus) %>%
@@ -30,22 +30,55 @@ pxp_dat_2 <- bf %>%
   mutate(Biotype = recode(Biotype, "pea" = "Pea")) %>%
   mutate(Genotype = as.factor(Genotype))
 
-pxp_dat_full <- left_join(pxp_dat, pxp_dat_2, by = c("Plant", "Biotype", "Virus"))
+pxp_dat_full <- left_join(pxp_dat, pxp_dat_2, by = c("Plant", "Genotype", "Virus")) %>%
+  subset(Avg_Count > 1) # for log transform
 
-pxp_only <- glm(Total_Move ~ Total_Count, data=pxp_dat_full)
-Anova(pxp_only)
+hist(pxp_dat_full$Avg_Count) #non-normal
+hist(pxp_dat_full$Avg_Move) #normal
 
-pxp_glm <- glm(Total_Move ~ Total_Count * Virus, data=pxp_dat_full)
+pxp_dat_full$Log_Count <- log(pxp_dat_full$Avg_Count)
+
+pxp_glm <- glm(Avg_Move ~ Log_Count*Virus, data=pxp_dat_full)
 Anova(pxp_glm)
+
 
 # Save model for table s2
 saveRDS(pxp_glm, "./Models/table3_mod.rds")
 
-dat <- ggpredict(pxp_glm, terms = c("Total_Count", "Virus"))
+# messing with some basic models
+pxp_fit <- ggpredict(pxp_glm, terms = c("Log_Count","Virus"))
 
-ggplot(dat, aes(x, predicted, color=group)) + geom_line()
+ggplot(pxp_fit, aes(x, predicted, color=group)) + geom_line()
+
+
+plot(log(pxp_dat_full$Avg_Count+1), pxp_dat_full$Avg_Move)
 
 # Fig 3
 # Relationship between aphid recruitment based on plants they perform best on
+#The Interaction
+dat_1 <- effect('Log_Count*Virus', pxp_glm, se=TRUE, xlevels=100) %>% as.data.frame()
 
+
+
+#Create plot
+Fig_3 <-ggplot(data=dat_1, aes(x=Log_Count, y=fit, group=Virus))+
+  geom_line(size=1, aes(color=Virus))+
+  geom_ribbon(aes(ymin=fit-se, ymax=fit+se,fill=Virus),alpha=.2)+
+  theme_bw() +
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank()) +
+  theme(text = element_text(size=14),
+        legend.text = element_text(size=14),
+        legend.direction = "horizontal",
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        legend.position="top") +
+  #coord_cartesian(ylim = c(0, 18), xlim=c(2, 7)) +
+  xlab("Aphid count at one week (log-transformed)") +
+  ylab("Number of aphids that moved towards host plant") +
+  geom_point(data=pxp_dat_full, aes(x=Log_Count, y=Avg_Move, colour=Virus))
+Fig_3
 

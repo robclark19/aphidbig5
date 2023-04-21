@@ -12,9 +12,10 @@ library("plotrix")
 bf <- read.csv("./Data/big five Logan check.csv")
 
 bf$Genotype <- as.factor(bf$Genotype)
+bf$Virus <- bf$virus
 
 # First model
-both.bio.mod <- glm.nb(Counts ~ Biotype * Plant * virus, data = bf)
+both.bio.mod <- glm.nb(Counts ~ Biotype * Plant * Virus, data = bf)
 summary(both.bio.mod)
 Anova(both.bio.mod)
 
@@ -22,7 +23,7 @@ both.bio.aic <- stepAIC(both.bio.mod)
 both.bio.aic$anova
 
 #Final model
-final.bio.mod <- glm.nb(Counts ~ Biotype + Plant + virus + Biotype:Plant + Plant:virus, data = bf)
+final.bio.mod <- glm.nb(Counts ~ Biotype + Plant + Virus + Plant*Biotype + Plant*virus, data = bf)
 
 Anova(final.bio.mod)
 
@@ -75,11 +76,11 @@ plot1_a
 # Fig 1b #####
 # Plant by virus figure
 
-fig1b_cld <- cld(emmeans(final.bio.mod, ~ virus|Plant, type="response"), sort=FALSE, Letters=c("abc"))
+fig1b_cld <- cld(emmeans(final.bio.mod, ~ Virus|Plant, type="response"), sort=FALSE, Letters=c("abc"))
 fig1b_cld
 
 # toggle for fig 1c
-# fig1b_cld <- cld(emmeans(final.bio.mod, ~ Plant|virus, type="response"), adjust="none", sort=FALSE, Letters=c("abc"))
+# fig1b_cld <- cld(emmeans(final.bio.mod, ~ Plant|Virus, type="response"), adjust="none", sort=FALSE, Letters=c("abc"))
 
 
 # edit emmean object so it makes ggplot happy
@@ -89,7 +90,7 @@ fig1b_cld$emmean <- fig1b_cld$response
 
 # Means and SE for biotype by plant
 
-Fig1b <- bf %>% group_by(virus, Plant) %>%
+Fig1b <- bf %>% group_by(Virus, Plant) %>%
   summarise(mean = mean(Counts), SEM = std.error(Counts, na.rm=TRUE)) %>% as.data.frame()
 
 # join cld with raw mean and se
@@ -98,17 +99,17 @@ Fig1b <- left_join(x=Fig1b, y=fig1b_cld, by = c("virus","Plant"))
 
 # ggplot object
 
-plot_1b <- ggplot(Fig1b, aes(x=virus, y=mean)) +
+plot_1b <- ggplot(Fig1b, aes(x=Virus, y=mean)) +
   geom_bar(stat="identity", width=0.8, position="dodge") +
   geom_errorbar(aes(ymin=mean-(SEM), ymax=mean+(SEM)), position=position_dodge(0.8), width=0.1) +
   theme_bw(base_size = 12) + 
   theme(panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(), axis.line = element_line(colour = "black")) +
-  labs(y="Aphid count at one week", x="Aphid infection status") + 
+  labs(y="Aphid count at one week", x="Virus exposure status of host plant") + 
   scale_fill_grey() +
   theme(axis.line.x = element_line(color="black", size = 0.5),
         axis.line.y = element_line(color="black", size = 0.5)) +
-  geom_text(aes(x = virus, y = (mean+SEM+75), label = .group), position=position_dodge(width=0.8)) +
+  geom_text(aes(x = Virus, y = (mean+SEM+75), label = .group), position=position_dodge(width=0.8)) +
   facet_wrap(~Plant)
 plot_1b
 
