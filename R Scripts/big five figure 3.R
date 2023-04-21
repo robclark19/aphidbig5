@@ -82,3 +82,5 @@ Fig_3 <-ggplot(data=dat_1, aes(x=Log_Count, y=fit, group=Virus))+
   geom_point(data=pxp_dat_full, aes(x=Log_Count, y=Avg_Move, colour=Virus))
 Fig_3
 
+ggsave(filename = "./Figures/Fig 4.png", plot = Fig_3, device = "png",
+       width = 6, height = 5, units = "in")

@@ -62,7 +62,7 @@ format_anova = function(model) {
 ```
 
 
-```{r tab.cap="Supplementary Table 1."}
+```{r tab.cap="Table S1: Analysis of Deviance for aphid counts after one week"}
 
 final.bio.mod <- readRDS("../Models/table1_mod.rds")
 format_anova(final.bio.mod)
@@ -73,7 +73,7 @@ format_anova(final.bio.mod)
 
 \newpage
 
-```{r tab.cap="Supplementary Table 2."}
+```{r tab.cap="Table S2: Analysis of Deviance for number of aphids moving towards host plant"}
 
 new.count.mod <- readRDS("../Models/table2_mod.rds")
 format_anova(new.count.mod)
@@ -84,39 +84,10 @@ format_anova(new.count.mod)
 
 \newpage
 
-```{r tab.cap="Supplementary Table 3."}
+```{r tab.cap="Table S1: Analysis of Deviance for preference and performance"}
 
 pxp.mod <- readRDS("../Models/table3_mod.rds")
 format_anova(pxp.mod)
 
-
-```
-
-\newpage
-
-```{r tab.cap="Placeholder for Table S1."}
-
-glm(PEMV ~ Virus, family=binomial, data=choice.pcr) %>%
-  format_anova()
-
-```
-
-\newpage
-
-```{r tab.cap="Placeholder for Table S2."}
-
-glm(PEMV ~ Virus, family=binomial, data=repro.pcr) %>%
-  format_anova()
-
-```
-
-\newpage
-
-```{r tab.cap="Placeholder for Table S3."}
-bflc[bflc==""] <- NA
-bflc.2 <- subset(bflc, virus != "BLRV")
-
-glm(Counts ~ `PEMV (PCR)`*Plant, data=bflc.2) %>%
-  format_anova()
 
 ```

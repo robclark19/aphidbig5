@@ -71,6 +71,8 @@ plot1_a <- ggplot(Fig1a, aes(x=Biotype, y=mean)) +
   facet_wrap(~Plant) 
 plot1_a
 
+ggsave(filename = "./Figures/Fig 1.png", plot = plot1_a, device = "png",
+       width = 6, height = 5, units = "in")
 
 
 # Fig 1b #####
@@ -94,7 +96,7 @@ Fig1b <- bf %>% group_by(Virus, Plant) %>%
   summarise(mean = mean(Counts), SEM = std.error(Counts, na.rm=TRUE)) %>% as.data.frame()
 
 # join cld with raw mean and se
-Fig1b <- left_join(x=Fig1b, y=fig1b_cld, by = c("virus","Plant"))
+Fig1b <- left_join(x=Fig1b, y=fig1b_cld, by = c("Virus","Plant"))
 
 
 # ggplot object
@@ -112,6 +114,9 @@ plot_1b <- ggplot(Fig1b, aes(x=Virus, y=mean)) +
   geom_text(aes(x = Virus, y = (mean+SEM+75), label = .group), position=position_dodge(width=0.8)) +
   facet_wrap(~Plant)
 plot_1b
+
+ggsave(filename = "./Figures/Fig 2.png", plot = plot1_b, device = "png",
+       width = 6, height = 5, units = "in")
 
 # plot_1c <- ggplot(Fig1b, aes(x=Plant, y=mean)) +
 #   geom_bar(stat="identity", width=0.8, position="dodge") +

@@ -62,5 +62,6 @@ Fig2_plot <- ggplot(Fig2, aes(x=Biotype, y=mean)) +
 Fig2_plot
 
 
-
+ggsave(filename = "./Figures/Fig 3.png", plot = Fig2_plot, device = "png",
+       width = 6, height = 5, units = "in")
 
