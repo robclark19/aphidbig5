@@ -30,6 +30,7 @@ Anova(final.count.mod)
 
 # Save model for table s2
 saveRDS(final.count.mod, "./Models/table2_mod.rds")
+saveRDS(new.count.mod, "./Models/table2b_mod.rds") #fully specified model
 
 # get emmeans for posthoc tests
 count.lsm <- cld(emmeans(final.count.mod, ~ Biotype|Plant), sort=FALSE, type="response", Letters=c("abc")) %>% as.data.frame()

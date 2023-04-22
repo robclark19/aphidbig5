@@ -23,12 +23,13 @@ both.bio.aic <- stepAIC(both.bio.mod)
 both.bio.aic$anova
 
 #Final model
-final.bio.mod <- glm.nb(Counts ~ Biotype + Plant + Virus + Plant*Biotype + Plant*virus, data = bf)
+final.bio.mod <- glm.nb(Counts ~ Biotype + Plant + Virus + Plant*Biotype + Plant*Virus, data = bf)
 
 Anova(final.bio.mod)
 
 # Save model for table s1
 saveRDS(final.bio.mod, "./Models/table1_mod.rds")
+saveRDS(both.bio.mod, "./Models/table1b_mod.rds") #fully specified model
 
 
 # Means and SE for biotype by plant
@@ -67,7 +68,7 @@ plot1_a <- ggplot(Fig1a, aes(x=Biotype, y=mean)) +
   theme(axis.line.x = element_line(color="black", size = 0.5),
         axis.line.y = element_line(color="black", size = 0.5)) +
   geom_text(aes(x = Biotype, y = (mean+SEM+50), label = .group), position=position_dodge(width=0.8)) +
-  scale_x_discrete(labels=c("pea" = "Pea biotype", "alf" = "Alfalfa biotype")) +
+  scale_x_discrete(labels=c("pea" = "Pea", "alf" = "Alfalfa")) +
   facet_wrap(~Plant) 
 plot1_a
 

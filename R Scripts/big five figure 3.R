@@ -9,6 +9,7 @@ library("emmeans")
 library("MASS")
 library("tidyverse")
 library("ggeffects")
+library("effects")
 
 # Preference by performance data loaded from prior scripts 
 settle.dat <- read.csv("./Data/settle mod.csv", header= TRUE)
