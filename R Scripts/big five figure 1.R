@@ -9,7 +9,8 @@ library("MASS")
 library("tidyverse")
 library("plotrix")
 
-bf <- read.csv("./Data/big five Logan check.csv")
+bf <- read.csv("./Data/big five Logan check.csv") %>%
+  mutate(Plant = recode(Plant, "Faba" = "Fava", "Red Clover" = "Red clover", "Hairy Vetch" = "Hairy vetch"))
 
 bf$Genotype <- as.factor(bf$Genotype)
 bf$Virus <- bf$virus

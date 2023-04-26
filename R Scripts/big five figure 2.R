@@ -8,7 +8,8 @@ library("emmeans")
 library("MASS")
 library("tidyverse")
 
-settle.dat <- read.csv("./Data/settle mod.csv", header= TRUE)
+settle.dat <- read.csv("./Data/settle mod.csv", header= TRUE) %>%
+  mutate(Plant_sp = recode(Plant_sp, "Red Clover" = "Red clover", "Hairy Vetch" = "Hairy vetch"))
 
 hist(settle.dat$Counts)
 
