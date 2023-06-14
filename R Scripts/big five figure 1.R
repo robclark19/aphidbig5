@@ -64,7 +64,7 @@ plot1_a <- ggplot(Fig1a, aes(x=Biotype, y=mean)) +
   theme_bw(base_size = 12) + 
   theme(panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(), axis.line = element_line(colour = "black")) +
-  labs(y="Aphid count at one week", x="Aphid genotype grouping") + 
+  labs(y="Aphid count at one week", x="Aphid biotype grouping") + 
   scale_fill_grey() +
   theme(axis.line.x = element_line(color="black", size = 0.5),
         axis.line.y = element_line(color="black", size = 0.5)) +
@@ -120,17 +120,26 @@ plot_1b
 ggsave(filename = "./Figures/Fig 2.png", plot = plot_1b, device = "png",
        width = 6, height = 5, units = "in")
 
-# plot_1c <- ggplot(Fig1b, aes(x=Plant, y=mean)) +
-#   geom_bar(stat="identity", width=0.8, position="dodge") +
-#   geom_errorbar(aes(ymin=mean-(SEM), ymax=mean+(SEM)), position=position_dodge(0.8), width=0.1) +
-#   theme_bw(base_size = 12) + 
-#   theme(panel.grid.major = element_blank(),
-#         panel.grid.minor = element_blank(), axis.line = element_line(colour = "black")) +
-#   labs(y="Aphid count at one week", x="Host-plant species") + 
-#   scale_fill_grey() +
-#   theme(axis.line.x = element_line(color="black", size = 0.5),
-#         axis.line.y = element_line(color="black", size = 0.5)) +
-#   geom_text(aes(x = Plant, y = (mean+SEM+75), label = .group), position=position_dodge(width=0.8)) +
-#   facet_wrap(~virus)
-# plot_1c
+
+# Means and SE for biotype by plant
+
+Fig1c <- bf %>% group_by(Virus) %>%
+  summarise(mean = mean(Counts), SEM = std.error(Counts, na.rm=TRUE)) %>% as.data.frame()
+
+Fig1c
+
+plot_1c <- ggplot(Fig1c, aes(x=Virus, y=mean)) +
+  geom_bar(stat="identity", width=0.8, position="dodge") +
+  geom_errorbar(aes(ymin=mean-(SEM), ymax=mean+(SEM)), position=position_dodge(0.8), width=0.1) +
+  theme_bw(base_size = 12) + 
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), axis.line = element_line(colour = "black")) +
+  labs(y="Aphid count at one week", x="Virus exposure status of host plant") + 
+  scale_fill_grey() +
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5))
+plot_1c
+
+ggsave(filename = "./Figures/Fig S1.png", plot = plot_1c, device = "png",
+       width = 4, height = 3, units = "in")
 
