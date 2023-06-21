@@ -55,7 +55,7 @@ Fig2_plot <- ggplot(Fig2, aes(x=Biotype, y=mean)) +
   theme_bw(base_size = 12) + 
   theme(panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(), axis.line = element_line(colour = "black")) +
-  labs(y="Number of aphids that moved towards host plant", x="Aphid biotype grouping") + 
+  labs(y="Number of aphids that moved towards host plant", x="Aphid colony") + 
   scale_fill_grey() +
   theme(axis.line.x = element_line(color="black", size = 0.5),
         axis.line.y = element_line(color="black", size = 0.5)) +

@@ -73,6 +73,7 @@ Fig_3 <-ggplot(data=dat_1, aes(x=Log_Count, y=fit, group=Virus))+
         panel.background = element_blank()) +
   theme(text = element_text(size=14),
         legend.text = element_text(size=14),
+        legend.title = element_blank(),
         legend.direction = "horizontal",
         panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(),

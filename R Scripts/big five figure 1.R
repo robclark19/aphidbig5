@@ -64,7 +64,7 @@ plot1_a <- ggplot(Fig1a, aes(x=Biotype, y=mean)) +
   theme_bw(base_size = 12) + 
   theme(panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(), axis.line = element_line(colour = "black")) +
-  labs(y="Aphid count at one week", x="Aphid biotype grouping") + 
+  labs(y="Aphid count at one week", x="Aphid colony") + 
   scale_fill_grey() +
   theme(axis.line.x = element_line(color="black", size = 0.5),
         axis.line.y = element_line(color="black", size = 0.5)) +
