@@ -15,6 +15,10 @@ hist(settle.dat$Counts)
 
 settle.dat$Plant <- settle.dat$Plant_sp
 
+## save data for osf
+# write.csv(settle.dat, "./Data/preference assay.csv")
+
+
 # First model
 
 new.count.mod <- glm.nb(Counts ~ Biotype*Plant*Virus, data=settle.dat)

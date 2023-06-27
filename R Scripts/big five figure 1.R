@@ -15,6 +15,9 @@ bf <- read.csv("./Data/big five Logan check.csv") %>%
 bf$Genotype <- as.factor(bf$Genotype)
 bf$Virus <- bf$virus
 
+# save data for osf
+# write.csv(bf, "./Data/performance assay.csv")
+
 # First model
 both.bio.mod <- glm.nb(Counts ~ Biotype * Plant * Virus, data = bf)
 summary(both.bio.mod)
