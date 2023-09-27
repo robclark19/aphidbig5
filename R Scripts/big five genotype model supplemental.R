@@ -28,7 +28,7 @@ genotype_cld
 
 # attempt to show results are not significantly different if using the core postive tests
 # only look at data where were could prove plants were infected
-bf2 <- bf %>% filter(Run != "Three", Retain. != "Drop")
+bf2 <- bf %>% filter(Retain. != "Drop")
 
 #Final model (currently used in manuscript)
 table1a_mod <- readRDS("./Models/table1_mod.rds")
@@ -45,11 +45,34 @@ anova(table1a_mod, final.bio.mod2)
 
 
 # does infection status work better than virus treatment (but we drop the third rep ofc)
-proof.mod <- glm.nb(Counts ~ Biotype + Plant + Infection.status + Plant*Biotype + Plant*Infection.status, data=bf2)
+proof.mod <- glm.nb(Counts ~ Biotype + Plant + Virus + Plant*Biotype + Plant*Virus, data=bf2)
 
 Anova(proof.mod)
 
-proof.cld <- cld(emmeans(proof.mod, ~ Infection.status|Plant, type="response"), sort=FALSE, Letters=c("abc"))
+proof.cld <- cld(emmeans(proof.mod, ~ Virus|Plant, type="response"), sort=FALSE, Letters=c("abc"))
 proof.cld
 
-# no sig differences among plants based on infection status
+# very similar conclusion with exception of red clover
+
+FigS2 <- bf2 %>% group_by(Virus, Plant) %>%
+  summarise(mean = mean(Counts), SEM = std.error(Counts, na.rm=TRUE)) %>% as.data.frame()
+
+# join cld with raw mean and se
+FigS2 <- left_join(x=FigS2, y=proof.cld, by = c("Virus","Plant"))
+
+plot_S2 <- ggplot(FigS2, aes(x=Virus, y=mean)) +
+  geom_bar(stat="identity", width=0.8, position="dodge") +
+  geom_errorbar(aes(ymin=mean-(SEM), ymax=mean+(SEM)), position=position_dodge(0.8), width=0.1) +
+  theme_bw(base_size = 12) + 
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), axis.line = element_line(colour = "black")) +
+  labs(y="Aphid count at one week", x="Verified virus status of host plant") + 
+  scale_fill_grey() +
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5)) +
+  geom_text(aes(x = Virus, y = (mean+SEM+75), label = .group), position=position_dodge(width=0.8)) +
+  facet_wrap(~Plant)
+plot_S2
+
+ggsave(filename = "./Figures/Fig S2.png", plot = plot_S2, device = "png",
+       width = 6, height = 5, units = "in")
