@@ -29,6 +29,9 @@ both.bio.aic$anova
 #Final model
 final.bio.mod <- glm.nb(Counts ~ Biotype + Plant + Virus + Plant*Biotype + Plant*Virus, data = bf)
 
+# testing run (consider using in last revision following reviewer comments)
+final.bio.mixed <- glm.nb(Counts ~ Biotype + Plant + Virus + Plant*Biotype + Plant*Virus + Run, data = bf)
+
 Anova(final.bio.mod)
 
 # Save model for table s1
