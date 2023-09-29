@@ -26,6 +26,31 @@ genotype_cld
 
 # testing data model
 
+
+# percentages of exposed plants that were actually infected
+infection_percentages <- bf %>%
+  filter(virus != "Sham") %>%
+  group_by(virus) %>%
+  summarize(
+    Total_Plants = n(),
+    Successful_Infections = sum(Infection.status == "YES"),
+    Percentage_Successful = (Successful_Infections / Total_Plants) * 100
+  )
+infection_percentages
+
+# try to split among plant species
+# Calculate the percentages of successful infections by plant species
+infection_percentages_by_species <- bf %>%
+  filter(virus != "Sham") %>%
+  group_by(Plant, virus) %>%
+  summarize(
+    Total_Plants = n(),
+    Successful_Infections = sum(Infection.status == "YES"),
+    Percentage_Successful = (Successful_Infections / Total_Plants) * 100
+  )
+
+infection_percentages_by_species 
+
 # attempt to show results are not significantly different if using the core postive tests
 # only look at data where were could prove plants were infected
 bf2 <- bf %>% filter(Retain. != "Drop")
