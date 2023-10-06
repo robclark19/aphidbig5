@@ -101,3 +101,41 @@ plot_S2
 
 ggsave(filename = "./Figures/Fig S2.png", plot = plot_S2, device = "png",
        width = 6, height = 5, units = "in")
+
+
+
+
+
+# preference with positive plants only
+
+settle.dat <- read.csv("./Data/test choice pcr.csv", header= TRUE) %>%
+  mutate(Plant_sp = recode(Plant_sp, "Red Clover" = "Red clover", "Hairy Vetch" = "Hairy vetch")) 
+
+settle.dat$Plant <- settle.dat$Plant_sp
+
+settle_1 <- settle.dat %>%
+  filter(Virus != "SHAM") %>%
+  group_by(Plant, Virus) %>%
+  summarize(
+    Total_Plants = n(),
+    Successful_Infections = sum(Drop == "No"),
+    Percentage_Successful = (Successful_Infections / Total_Plants) * 100
+  )
+
+# lots of very low infection %s
+settle_1
+
+settle_2 <- settle.dat %>%
+  filter(Drop == "No")
+
+# First model
+
+mod_1 <- glm.nb(Aphid.counts ~ Biotype*Plant*Virus, data=settle_2)
+Anova(mod_1)
+
+# Final model
+
+mod_2 <- glm.nb(Aphid.counts ~ Biotype + Plant + Plant*Biotype, data=settle_2)
+
+Anova(mod_2)
+
